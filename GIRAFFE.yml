@@ -4,4 +4,8 @@ tools:
     file:
       - GIRAFFE/porcupine_pipeline.pork
   armadillo:
+    file:
+      - GIRAFFE/empty.arma
   platypus:
+    file:
+      - GIRAFFE/empty.plap
