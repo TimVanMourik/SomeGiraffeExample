@@ -1,2 +1,7 @@
 # list of tools
-- GIRAFFE/PORCUPINE.yml
+tools:
+  porcupine:
+    file:
+      - GIRAFFE/porcupine_pipeline.pork
+  armadillo:
+  platypus:
