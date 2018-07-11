@@ -1,4 +1,4 @@
-This is an example of an analysis repository. The content of this repository is automatically visualised by https://www.giraffe.tools.
+This is an example of an analysis repository. The content of this repository is automatically visualised by https://www.giraffe.tools
 
 ## Usage:
 Simply go to:
