@@ -2,8 +2,11 @@ This is an example of an analysis repository. The content of this repository is 
 
 ## Usage:
 Simply go to:
+
 https://www.giraffe.tools/gh/$username/$repository/$branch
+
 So for this repository, that would be:
+
 https://www.giraffe.tools/gh/TimVanMourik/SomeGiraffeExample/master
 
 ## Work In Progress
