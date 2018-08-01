@@ -9,6 +9,8 @@ So for this repository, that would be:
 
 https://www.giraffe.tools/gh/TimVanMourik/SomeGiraffeExample/master
 
+This process is completely automatic if you have a GIRAFFE.yml file in the root of your repository that points to the relevant tool files in this repository. Documentation will follow. 
+
 ## Work In Progress
 This application is actively being developed and in the future will support
 * Visualisations of workflows
