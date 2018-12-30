@@ -62,12 +62,12 @@
           "id": "85b963b5-b1fc-4386-b7ec-1d0a89598aa2",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "outfiles",
           "output": true,
           "outputPort": "1bd8e70",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "bucket",
@@ -75,12 +75,12 @@
           "id": "cff64d00-aa1f-49ee-8322-dfac60ff69ff",
           "input": true,
           "inputPort": "1b02220",
-          "iterator": false,
           "name": "bucket",
           "output": false,
           "outputPort": false,
           "value": "'openneuro'",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "sort_filelist",
@@ -88,12 +88,12 @@
           "id": "3cd33a72-1b98-4953-931f-6b52b850f5e9",
           "input": true,
           "inputPort": "2af7dd0",
-          "iterator": false,
           "name": "sort_filelist",
           "output": false,
           "outputPort": false,
           "value": "True",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "template",
@@ -101,12 +101,12 @@
           "id": "ed42c80b-9ecc-4550-9352-3eb3dafdbbd4",
           "input": true,
           "inputPort": "49e44f0",
-          "iterator": false,
           "name": "template",
           "output": false,
           "outputPort": false,
           "value": "'sub-01/func/sub-01_task-simon_run-1_bold.nii.gz'",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "anon",
@@ -114,12 +114,12 @@
           "id": "9d3d39f2-4c25-4674-afa9-814acfcb5c56",
           "input": true,
           "inputPort": "1ef7e60",
-          "iterator": false,
           "name": "anon",
           "output": false,
           "outputPort": false,
           "value": "True",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "region",
@@ -127,12 +127,12 @@
           "id": "71618883-7ce1-4d79-8ac0-e8ad37282bf3",
           "input": true,
           "inputPort": "1cc56e0",
-          "iterator": false,
           "name": "region",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "bucket_path",
@@ -140,12 +140,12 @@
           "id": "a864d1cf-5448-4177-a5f5-dbd56c2dc7c3",
           "input": true,
           "inputPort": "1e09a20",
-          "iterator": false,
           "name": "bucket_path",
           "output": false,
           "outputPort": false,
           "value": "'ds000101/ds000101_R2.0.0/uncompressed/'",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "local_directory",
@@ -153,12 +153,12 @@
           "id": "6da87b40-3308-4608-ba82-3d462a457e25",
           "input": true,
           "inputPort": "1b15370",
-          "iterator": false,
           "name": "local_directory",
           "output": false,
           "outputPort": false,
           "value": "'/tmp'",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "raise_on_empty",
@@ -166,12 +166,12 @@
           "id": "f4642709-5231-4795-a59d-79fbb97506fd",
           "input": true,
           "inputPort": "1bd8a80",
-          "iterator": false,
           "name": "raise_on_empty",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "template_args",
@@ -179,12 +179,12 @@
           "id": "8d600ca0-5833-46e5-a685-147a01a9437b",
           "input": true,
           "inputPort": "1c6fa30",
-          "iterator": false,
           "name": "template_args",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -192,12 +192,12 @@
           "id": "e62f5c3d-66d7-4903-b10e-bb04875796e4",
           "input": true,
           "inputPort": "2ad8290",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         }
       ],
       "position": [
@@ -238,12 +238,12 @@
           "id": "3ae6da8a-5083-49a2-b9a7-4dfefc94b97f",
           "input": true,
           "inputPort": "5876410",
-          "iterator": false,
           "name": "in_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -251,12 +251,12 @@
           "id": "a6392a00-f177-431b-954a-f212876fa5af",
           "input": true,
           "inputPort": "73af170",
-          "iterator": false,
           "name": "out_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "index_dir",
@@ -264,12 +264,12 @@
           "id": "f68820e3-69ed-44b4-8a61-1498a6957ee8",
           "input": true,
           "inputPort": "309c4e0",
-          "iterator": false,
           "name": "index_dir",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "time_repetition",
@@ -277,12 +277,12 @@
           "id": "705979d5-789d-4855-86f7-a49a0a13aa69",
           "input": true,
           "inputPort": "1ec7590",
-          "iterator": false,
           "name": "time_repetition",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "slice_direction",
@@ -290,12 +290,12 @@
           "id": "264f1934-4611-496d-9609-1f0473ec01bf",
           "input": true,
           "inputPort": "280aec0",
-          "iterator": false,
           "name": "slice_direction",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "interleaved",
@@ -303,12 +303,12 @@
           "id": "b836ca86-b4b5-4b0b-8b35-632d1a017b70",
           "input": true,
           "inputPort": "1c893a0",
-          "iterator": false,
           "name": "interleaved",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "custom_timings",
@@ -316,12 +316,12 @@
           "id": "e3062183-6b8d-41ff-81bc-82a0773bd3e7",
           "input": true,
           "inputPort": "270cb10",
-          "iterator": false,
           "name": "custom_timings",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "global_shift",
@@ -329,12 +329,12 @@
           "id": "7a542f83-1e2e-4f8d-9489-b11f3386cab5",
           "input": true,
           "inputPort": "1d0f440",
-          "iterator": false,
           "name": "global_shift",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "custom_order",
@@ -342,12 +342,12 @@
           "id": "c9046c37-3fba-402a-9a2f-7c0f3d13e8ef",
           "input": true,
           "inputPort": "7ad0230",
-          "iterator": false,
           "name": "custom_order",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "output_type",
@@ -355,12 +355,12 @@
           "id": "cebd9628-09c7-4ea3-affe-e3683e8459ce",
           "input": true,
           "inputPort": "1cfdd00",
-          "iterator": false,
           "name": "output_type",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "args",
@@ -368,12 +368,12 @@
           "id": "dc7edd9d-1d0d-47ab-87dc-848518915589",
           "input": true,
           "inputPort": "3088390",
-          "iterator": false,
           "name": "args",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "environ",
@@ -381,12 +381,12 @@
           "id": "c3e27bed-fa7c-4c40-8a05-211e187e1778",
           "input": true,
           "inputPort": "1d615c0",
-          "iterator": false,
           "name": "environ",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "terminal_output",
@@ -394,12 +394,12 @@
           "id": "14c86627-61c9-442a-88cb-37a948eb4c0e",
           "input": true,
           "inputPort": "3bb4490",
-          "iterator": false,
           "name": "terminal_output",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -407,12 +407,12 @@
           "id": "de35b73a-8323-41f2-ae50-ae8fcfa846a9",
           "input": true,
           "inputPort": "2219c80",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "slice_time_corrected_file",
@@ -420,12 +420,12 @@
           "id": "4f58fd51-954b-4e66-873c-e7705dc12ff7",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "slice_time_corrected_file",
           "output": true,
           "outputPort": "76ba750",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         }
       ],
       "position": [
@@ -466,12 +466,12 @@
           "id": "937c3c9d-0215-4520-8903-02b2e08dafb1",
           "input": true,
           "inputPort": "5cc0800",
-          "iterator": false,
           "name": "in_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -479,12 +479,12 @@
           "id": "019f5ea4-8cb0-42d3-8fff-22e44d0064ca",
           "input": true,
           "inputPort": "76e13a0",
-          "iterator": false,
           "name": "out_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "cost",
@@ -492,12 +492,12 @@
           "id": "8019998a-5f19-4798-be9e-44b704a2bb74",
           "input": true,
           "inputPort": "5516cc0",
-          "iterator": false,
           "name": "cost",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "bins",
@@ -505,12 +505,12 @@
           "id": "57dd1231-2b8c-4b59-8160-2ee2ac478e90",
           "input": true,
           "inputPort": "1e0ec30",
-          "iterator": false,
           "name": "bins",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "dof",
@@ -518,12 +518,12 @@
           "id": "f01dc225-4b79-4fce-af7e-53ad2d0ca592",
           "input": true,
           "inputPort": "41e7b10",
-          "iterator": false,
           "name": "dof",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ref_vol",
@@ -531,12 +531,12 @@
           "id": "5aaee638-c21e-4ba0-a047-4512b93d5141",
           "input": true,
           "inputPort": "30cf1f0",
-          "iterator": false,
           "name": "ref_vol",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "scaling",
@@ -544,12 +544,12 @@
           "id": "fa4cdb05-5ea5-444c-94c4-0ba0ad66efd5",
           "input": true,
           "inputPort": "1d972b0",
-          "iterator": false,
           "name": "scaling",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "smooth",
@@ -557,12 +557,12 @@
           "id": "f94095fc-7f7d-4f5d-a30e-afdd4d398e09",
           "input": true,
           "inputPort": "83e1230",
-          "iterator": false,
           "name": "smooth",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "rotation",
@@ -570,12 +570,12 @@
           "id": "21df976f-135a-408f-b2c1-fb32a35ab28a",
           "input": true,
           "inputPort": "49c8450",
-          "iterator": false,
           "name": "rotation",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "stages",
@@ -583,12 +583,12 @@
           "id": "a25ff79e-660b-47ea-a7a1-5afc5c63f957",
           "input": true,
           "inputPort": "1c922a0",
-          "iterator": false,
           "name": "stages",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "init",
@@ -596,12 +596,12 @@
           "id": "e7f8f95b-7725-4ff8-b468-fc910ea3b62c",
           "input": true,
           "inputPort": "1dde020",
-          "iterator": false,
           "name": "init",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "interpolation",
@@ -609,12 +609,12 @@
           "id": "db1598ea-fcad-4c0b-b2cf-70de2072362e",
           "input": true,
           "inputPort": "5b8dc00",
-          "iterator": false,
           "name": "interpolation",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "use_gradient",
@@ -622,12 +622,12 @@
           "id": "ec6b8fe3-f108-4add-b6af-f11ed5b8b3af",
           "input": true,
           "inputPort": "38cfba0",
-          "iterator": false,
           "name": "use_gradient",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "use_contour",
@@ -635,12 +635,12 @@
           "id": "07c57a96-54b7-4f72-bcab-da3e27f2a849",
           "input": true,
           "inputPort": "49c0300",
-          "iterator": false,
           "name": "use_contour",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "mean_vol",
@@ -648,12 +648,12 @@
           "id": "3f994a58-84b2-4792-9fbc-d27d910542cc",
           "input": true,
           "inputPort": "30898b0",
-          "iterator": false,
           "name": "mean_vol",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "stats_imgs",
@@ -661,12 +661,12 @@
           "id": "36035ea3-adde-4d0a-96cc-749646ccea93",
           "input": true,
           "inputPort": "41a1250",
-          "iterator": false,
           "name": "stats_imgs",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "save_mats",
@@ -674,12 +674,12 @@
           "id": "e01273ec-4a75-4c44-abba-5d47fb98ade0",
           "input": true,
           "inputPort": "24d03d0",
-          "iterator": false,
           "name": "save_mats",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "save_plots",
@@ -687,12 +687,12 @@
           "id": "7ef0f69c-5aa1-4047-afd1-57209ee724f8",
           "input": true,
           "inputPort": "25fec40",
-          "iterator": false,
           "name": "save_plots",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "save_rms",
@@ -700,12 +700,12 @@
           "id": "6ff03e96-abf0-4278-8acf-00665473a910",
           "input": true,
           "inputPort": "1d9bd60",
-          "iterator": false,
           "name": "save_rms",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ref_file",
@@ -713,12 +713,12 @@
           "id": "b7044a70-d911-4d86-9d40-51f1b25b6fdf",
           "input": true,
           "inputPort": "321aab0",
-          "iterator": false,
           "name": "ref_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "output_type",
@@ -726,12 +726,12 @@
           "id": "c11d0165-de83-4e38-a95b-cb7dcb5b9f13",
           "input": true,
           "inputPort": "22fb140",
-          "iterator": false,
           "name": "output_type",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "args",
@@ -739,12 +739,12 @@
           "id": "8729c679-b259-49ad-8726-341c596aad46",
           "input": true,
           "inputPort": "24e1a20",
-          "iterator": false,
           "name": "args",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "environ",
@@ -752,12 +752,12 @@
           "id": "4cdb8353-8d7e-499b-b1b7-c6de6950f509",
           "input": true,
           "inputPort": "2de8080",
-          "iterator": false,
           "name": "environ",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "terminal_output",
@@ -765,12 +765,12 @@
           "id": "d53a8368-b45d-4fdc-a17e-eac9aa98adeb",
           "input": true,
           "inputPort": "5ccbff0",
-          "iterator": false,
           "name": "terminal_output",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -778,12 +778,12 @@
           "id": "a74686d1-6d64-4439-95d3-ad72c5f9050d",
           "input": true,
           "inputPort": "1dbd530",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -791,12 +791,12 @@
           "id": "86fc3149-2996-405f-8fd4-568214e33a9a",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "out_file",
           "output": true,
           "outputPort": "3254900",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "variance_img",
@@ -804,12 +804,12 @@
           "id": "c94ffefa-2378-4293-bb94-d8a1bbef46db",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "variance_img",
           "output": true,
           "outputPort": "686c300",
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "std_img",
@@ -817,12 +817,12 @@
           "id": "5a32b474-4adc-4993-84b7-7c0e511c9778",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "std_img",
           "output": true,
           "outputPort": "34d4140",
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "mean_img",
@@ -830,12 +830,12 @@
           "id": "0fcc6b7d-9f8b-4d60-8d99-4348ddeba35d",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "mean_img",
           "output": true,
           "outputPort": "22fbdf0",
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "par_file",
@@ -843,12 +843,12 @@
           "id": "d1498115-8c7e-4f4f-a069-07b7c9eee30b",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "par_file",
           "output": true,
           "outputPort": "260de40",
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "mat_file",
@@ -856,12 +856,12 @@
           "id": "ec3d9b41-2612-41b3-a648-0bd921c0ea1b",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "mat_file",
           "output": true,
           "outputPort": "22c1dc0",
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "rms_files",
@@ -869,12 +869,12 @@
           "id": "88dd515e-be2b-4587-a356-a1bba269efee",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "rms_files",
           "output": true,
           "outputPort": "1b2f6c0",
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         }
       ],
       "position": [
@@ -915,12 +915,12 @@
           "id": "2bdfde31-fcf0-4ec8-a31a-dfca9af2bf31",
           "input": true,
           "inputPort": "24ac070",
-          "iterator": false,
           "name": "in_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "regress_poly",
@@ -928,12 +928,12 @@
           "id": "22d8e3b6-e2a7-4823-8b47-d9f492b67363",
           "input": true,
           "inputPort": "2802290",
-          "iterator": false,
           "name": "regress_poly",
           "output": false,
           "outputPort": false,
           "value": "3",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "tsnr_file",
@@ -941,12 +941,12 @@
           "id": "379285d7-8c52-4b0b-b15f-b6428c697bf8",
           "input": true,
           "inputPort": "2c08d10",
-          "iterator": false,
           "name": "tsnr_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "mean_file",
@@ -954,12 +954,12 @@
           "id": "366d620d-136b-4b66-a239-3af4be511bde",
           "input": true,
           "inputPort": "1dfa180",
-          "iterator": false,
           "name": "mean_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "stddev_file",
@@ -967,12 +967,12 @@
           "id": "945f29e5-4e8e-406c-a5d6-a8cb42ebbed0",
           "input": true,
           "inputPort": "1d1a5e0",
-          "iterator": false,
           "name": "stddev_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "detrended_file",
@@ -980,12 +980,12 @@
           "id": "95139cb9-cfc0-45ed-bf16-5fc09a73b1d2",
           "input": true,
           "inputPort": "1ef8e30",
-          "iterator": false,
           "name": "detrended_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -993,12 +993,12 @@
           "id": "169c7def-7b2f-47f2-8c00-8f7ad45427fb",
           "input": true,
           "inputPort": "4152800",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "tsnr_file",
@@ -1006,12 +1006,12 @@
           "id": "c79c3050-b8f8-451a-a2dc-23848f8e7818",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "tsnr_file",
           "output": true,
           "outputPort": "20e9870",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "mean_file",
@@ -1019,12 +1019,12 @@
           "id": "d570a2d2-2b5e-4a66-826e-08b70114f862",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "mean_file",
           "output": true,
           "outputPort": "21915f0",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "stddev_file",
@@ -1032,12 +1032,12 @@
           "id": "001e3744-0e8d-4541-9391-885a13c1c02d",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "stddev_file",
           "output": true,
           "outputPort": "4111420",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "detrended_file",
@@ -1045,12 +1045,12 @@
           "id": "3ab52966-81d4-4f42-a1de-010e74c5d13b",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "detrended_file",
           "output": true,
           "outputPort": "171f310",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         }
       ],
       "position": [
@@ -1091,12 +1091,12 @@
           "id": "7232531e-99ea-4c50-9bc4-d4128fede100",
           "input": true,
           "inputPort": "2307650",
-          "iterator": false,
           "name": "in_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "op_string",
@@ -1104,12 +1104,12 @@
           "id": "53f058e0-e1b2-4000-a175-e8b58d6ab6de",
           "input": true,
           "inputPort": "586f1a0",
-          "iterator": false,
           "name": "op_string",
           "output": false,
           "outputPort": false,
           "value": "'-p 98'",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "split_4d",
@@ -1117,12 +1117,12 @@
           "id": "dd920c38-2681-4880-a068-eda2cb71eb61",
           "input": true,
           "inputPort": "53263c0",
-          "iterator": false,
           "name": "split_4d",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "mask_file",
@@ -1130,12 +1130,12 @@
           "id": "7edacbc0-c03a-473c-aa5b-504d01e6569d",
           "input": true,
           "inputPort": "6b55500",
-          "iterator": false,
           "name": "mask_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "output_type",
@@ -1143,12 +1143,12 @@
           "id": "bcf8ba9e-57cc-45ae-abcc-5e78979bd24e",
           "input": true,
           "inputPort": "76a0310",
-          "iterator": false,
           "name": "output_type",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "args",
@@ -1156,12 +1156,12 @@
           "id": "7d79e0ae-15be-4044-96cc-97eecaca6277",
           "input": true,
           "inputPort": "291ada0",
-          "iterator": false,
           "name": "args",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "environ",
@@ -1169,12 +1169,12 @@
           "id": "ac6020a7-cd03-4e88-bbfb-d72b2b8bb550",
           "input": true,
           "inputPort": "24ceb40",
-          "iterator": false,
           "name": "environ",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "terminal_output",
@@ -1182,12 +1182,12 @@
           "id": "9ceb4daf-a346-4001-b484-2f5d7b98dba3",
           "input": true,
           "inputPort": "1ef5a50",
-          "iterator": false,
           "name": "terminal_output",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -1195,12 +1195,12 @@
           "id": "0816a406-f9c8-489d-8070-40468a5bb470",
           "input": true,
           "inputPort": "1dfd340",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "out_stat",
@@ -1208,12 +1208,12 @@
           "id": "cb68c315-d0cd-4490-a64d-af047c474689",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "out_stat",
           "output": true,
           "outputPort": "30d8ec0",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         }
       ],
       "position": [
@@ -1254,12 +1254,12 @@
           "id": "c8528008-e21b-4b45-836a-6c5089fa8faa",
           "input": true,
           "inputPort": "2adb890",
-          "iterator": false,
           "name": "thresh",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "in_file",
@@ -1267,12 +1267,12 @@
           "id": "ae183620-8b2f-423d-9bc3-8e712809ab60",
           "input": true,
           "inputPort": "41cce40",
-          "iterator": false,
           "name": "in_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "direction",
@@ -1280,12 +1280,12 @@
           "id": "3bfbf7ee-b895-4e20-8404-81563cffb33c",
           "input": true,
           "inputPort": "30f0930",
-          "iterator": false,
           "name": "direction",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "use_robust_range",
@@ -1293,12 +1293,12 @@
           "id": "4c9d0dcc-5592-4d88-891e-51b3d3ef9c22",
           "input": true,
           "inputPort": "25f7190",
-          "iterator": false,
           "name": "use_robust_range",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "use_nonzero_voxels",
@@ -1306,12 +1306,12 @@
           "id": "b49e9834-ae5a-46ac-9730-a13102b734b6",
           "input": true,
           "inputPort": "25f8920",
-          "iterator": false,
           "name": "use_nonzero_voxels",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -1319,12 +1319,12 @@
           "id": "74d7f6cc-a930-41bc-b4d9-6874e343c3b9",
           "input": true,
           "inputPort": "2009bd0",
-          "iterator": false,
           "name": "out_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "internal_datatype",
@@ -1332,12 +1332,12 @@
           "id": "1f3b3681-158f-4e14-8629-59678edddf8b",
           "input": true,
           "inputPort": "21f8500",
-          "iterator": false,
           "name": "internal_datatype",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "output_datatype",
@@ -1345,12 +1345,12 @@
           "id": "7b6ab3a8-cb08-4acd-8921-5702f56c46c6",
           "input": true,
           "inputPort": "6b562a0",
-          "iterator": false,
           "name": "output_datatype",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "nan2zeros",
@@ -1358,12 +1358,12 @@
           "id": "d09dddf5-32c2-49ef-ad04-7c1cd1266d18",
           "input": true,
           "inputPort": "2aa4b40",
-          "iterator": false,
           "name": "nan2zeros",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "output_type",
@@ -1371,12 +1371,12 @@
           "id": "7d755170-2dde-4ca5-b569-c2bc1c433195",
           "input": true,
           "inputPort": "83cafc0",
-          "iterator": false,
           "name": "output_type",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "args",
@@ -1384,12 +1384,12 @@
           "id": "52372455-a507-45ed-b09d-f2de3688ceb3",
           "input": true,
           "inputPort": "2e040a0",
-          "iterator": false,
           "name": "args",
           "output": false,
           "outputPort": false,
           "value": "'-bin'",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "environ",
@@ -1397,12 +1397,12 @@
           "id": "a726a7eb-a211-47a1-b983-2990ac0cd9dd",
           "input": true,
           "inputPort": "2adefb0",
-          "iterator": false,
           "name": "environ",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "terminal_output",
@@ -1410,12 +1410,12 @@
           "id": "f57c724b-20b9-4f4d-be96-d7ae32fc481a",
           "input": true,
           "inputPort": "20db5b0",
-          "iterator": false,
           "name": "terminal_output",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -1423,12 +1423,12 @@
           "id": "c4f76b21-1978-4163-9ba1-2077b83a9473",
           "input": true,
           "inputPort": "2042540",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -1436,12 +1436,12 @@
           "id": "c10704e9-7414-4a0f-9feb-994de0a99751",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "out_file",
           "output": true,
           "outputPort": "1dd4c50",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         }
       ],
       "position": [
@@ -1482,12 +1482,12 @@
           "id": "72c0f048-8a83-4a52-b8f8-07e31e878e77",
           "input": true,
           "inputPort": "7395ca0",
-          "iterator": false,
           "name": "realigned_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "mask_files",
@@ -1495,12 +1495,12 @@
           "id": "076a1423-8dc6-4e90-b985-033f8ad39805",
           "input": true,
           "inputPort": "50b9ee0",
-          "iterator": false,
           "name": "mask_files",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "merge_method",
@@ -1508,12 +1508,12 @@
           "id": "63cecbc3-f4d5-41ae-b94b-bec0bb391cf9",
           "input": true,
           "inputPort": "22dd980",
-          "iterator": false,
           "name": "merge_method",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "mask_index",
@@ -1521,12 +1521,12 @@
           "id": "bb5b31e3-04e4-4301-a92b-2e4f76d72d9c",
           "input": true,
           "inputPort": "24b4e00",
-          "iterator": false,
           "name": "mask_index",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "components_file",
@@ -1534,12 +1534,12 @@
           "id": "54656de8-eeb5-452f-9f76-e09ecce40439",
           "input": true,
           "inputPort": "5b86450",
-          "iterator": false,
           "name": "components_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "num_components",
@@ -1547,12 +1547,12 @@
           "id": "955eb9fb-6f44-48e9-8228-89c2aabcbc25",
           "input": true,
           "inputPort": "24c8780",
-          "iterator": false,
           "name": "num_components",
           "output": false,
           "outputPort": false,
           "value": "2",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "pre_filter",
@@ -1560,12 +1560,12 @@
           "id": "719d9909-381e-47e2-b2ce-ad7a9c9e0709",
           "input": true,
           "inputPort": "24cbde0",
-          "iterator": false,
           "name": "pre_filter",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "use_regress_poly",
@@ -1573,12 +1573,12 @@
           "id": "b9afdb16-d7ec-4e4d-a87c-611d3ae9a463",
           "input": true,
           "inputPort": "2d99e20",
-          "iterator": false,
           "name": "use_regress_poly",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "regress_poly_degree",
@@ -1586,12 +1586,12 @@
           "id": "3008058d-70f5-4261-92f2-575b021b5f95",
           "input": true,
           "inputPort": "3abc230",
-          "iterator": false,
           "name": "regress_poly_degree",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "header_prefix",
@@ -1599,12 +1599,12 @@
           "id": "f95ee056-7e40-4e1c-bd47-45428c837903",
           "input": true,
           "inputPort": "5608750",
-          "iterator": false,
           "name": "header_prefix",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "high_pass_cutoff",
@@ -1612,12 +1612,12 @@
           "id": "e6dc6641-c4c2-4141-a88b-e445b4a94f45",
           "input": true,
           "inputPort": "560c130",
-          "iterator": false,
           "name": "high_pass_cutoff",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "repetition_time",
@@ -1625,12 +1625,12 @@
           "id": "12c5af05-2adb-4a3e-8617-de7f4eb1f3f2",
           "input": true,
           "inputPort": "30c9340",
-          "iterator": false,
           "name": "repetition_time",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "save_pre_filter",
@@ -1638,12 +1638,12 @@
           "id": "14700972-4bf0-452b-8c46-22cf94321c0c",
           "input": true,
           "inputPort": "550fc20",
-          "iterator": false,
           "name": "save_pre_filter",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_initial_volumes",
@@ -1651,12 +1651,12 @@
           "id": "9d249878-5a6a-41d9-ad6a-8c4a42703a6c",
           "input": true,
           "inputPort": "68560b0",
-          "iterator": false,
           "name": "ignore_initial_volumes",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -1664,12 +1664,12 @@
           "id": "c878925c-3000-4403-bfd8-c869f7b64bfc",
           "input": true,
           "inputPort": "1e95bf0",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "components_file",
@@ -1677,12 +1677,12 @@
           "id": "851af7e9-105e-44cc-8e8c-2faa3f1e3201",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "components_file",
           "output": true,
           "outputPort": "2909250",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "pre_filter_file",
@@ -1690,12 +1690,12 @@
           "id": "266999e6-f66a-4d45-bebb-9fca8b664a4d",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "pre_filter_file",
           "output": true,
           "outputPort": "290d700",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         }
       ],
       "position": [
@@ -1736,12 +1736,12 @@
           "id": "d8781726-6fc4-49fe-b2e7-1bd3cdb59410",
           "input": true,
           "inputPort": "33cc250",
-          "iterator": false,
           "name": "in_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "design_file",
@@ -1749,12 +1749,12 @@
           "id": "91e9e269-fcda-4544-a7b5-45fa63f78f7c",
           "input": true,
           "inputPort": "462be00",
-          "iterator": false,
           "name": "design_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "filter_columns",
@@ -1762,12 +1762,12 @@
           "id": "2d58ad54-83a4-44e9-9591-ed5cf1190986",
           "input": true,
           "inputPort": "4828b60",
-          "iterator": false,
           "name": "filter_columns",
           "output": false,
           "outputPort": false,
           "value": "[1, 2]",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "filter_all",
@@ -1775,12 +1775,12 @@
           "id": "0c1d3abd-ad6b-4f0d-882c-7eb3fd14f485",
           "input": true,
           "inputPort": "49291e0",
-          "iterator": false,
           "name": "filter_all",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -1788,12 +1788,12 @@
           "id": "083ef9c3-13a5-4408-bc33-7a85143ee391",
           "input": true,
           "inputPort": "492e200",
-          "iterator": false,
           "name": "out_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "mask",
@@ -1801,12 +1801,12 @@
           "id": "684fc1d5-0f03-4d47-a11a-aad9970a9cbf",
           "input": true,
           "inputPort": "6c508d0",
-          "iterator": false,
           "name": "mask",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "var_norm",
@@ -1814,12 +1814,12 @@
           "id": "8a777355-347f-42df-926f-e01599da2d67",
           "input": true,
           "inputPort": "6c543f0",
-          "iterator": false,
           "name": "var_norm",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "out_vnscales",
@@ -1827,12 +1827,12 @@
           "id": "c356b235-1d0b-4dd3-8811-a8da49c657e9",
           "input": true,
           "inputPort": "6d4fb00",
-          "iterator": false,
           "name": "out_vnscales",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "output_type",
@@ -1840,12 +1840,12 @@
           "id": "30451336-aba8-463e-ad82-bb044ce6da87",
           "input": true,
           "inputPort": "6d54120",
-          "iterator": false,
           "name": "output_type",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "args",
@@ -1853,12 +1853,12 @@
           "id": "d3de74d4-3cb3-4014-b36c-b185244c51e4",
           "input": true,
           "inputPort": "6d58480",
-          "iterator": false,
           "name": "args",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "environ",
@@ -1866,12 +1866,12 @@
           "id": "46c3e9dd-a857-4370-8e04-2427040da8df",
           "input": true,
           "inputPort": "6421ef0",
-          "iterator": false,
           "name": "environ",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "terminal_output",
@@ -1879,12 +1879,12 @@
           "id": "8ec14c0d-8e28-4de6-9313-6b3980a9ecf3",
           "input": true,
           "inputPort": "6425fe0",
-          "iterator": false,
           "name": "terminal_output",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -1892,12 +1892,12 @@
           "id": "db70d24f-9a6b-4862-ba1e-264fc710f9b2",
           "input": true,
           "inputPort": "3faf350",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -1905,12 +1905,12 @@
           "id": "f6ea0efe-6483-4f99-8f74-c5db92add488",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "out_file",
           "output": true,
           "outputPort": "3fb3a00",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         }
       ],
       "position": [
@@ -1951,12 +1951,12 @@
           "id": "ed395ea2-11c4-4192-9ce2-4c1dd8d6930d",
           "input": true,
           "inputPort": "596e0a0",
-          "iterator": false,
           "name": "in_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "lowpass_sigma",
@@ -1964,12 +1964,12 @@
           "id": "b79146d2-5943-400b-8197-a9bbd22abad6",
           "input": true,
           "inputPort": "3d2c2a0",
-          "iterator": false,
           "name": "lowpass_sigma",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "highpass_sigma",
@@ -1977,12 +1977,12 @@
           "id": "afb648df-ba57-4e7a-a42b-2d4988459553",
           "input": true,
           "inputPort": "5308e20",
-          "iterator": false,
           "name": "highpass_sigma",
           "output": false,
           "outputPort": false,
           "value": "25",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -1990,12 +1990,12 @@
           "id": "4bfc6fa2-ed44-4e52-85fb-c0370289d4e3",
           "input": true,
           "inputPort": "530f3d0",
-          "iterator": false,
           "name": "out_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "internal_datatype",
@@ -2003,12 +2003,12 @@
           "id": "fbaec5a7-5ada-47d6-bf3c-6d760823f07a",
           "input": true,
           "inputPort": "5313560",
-          "iterator": false,
           "name": "internal_datatype",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "output_datatype",
@@ -2016,12 +2016,12 @@
           "id": "52c4b032-6f55-446a-a8e7-f6e5a3f65e08",
           "input": true,
           "inputPort": "5317a20",
-          "iterator": false,
           "name": "output_datatype",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "nan2zeros",
@@ -2029,12 +2029,12 @@
           "id": "fdf7ac65-d663-4357-8701-b043d9c459fc",
           "input": true,
           "inputPort": "531cdd0",
-          "iterator": false,
           "name": "nan2zeros",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "output_type",
@@ -2042,12 +2042,12 @@
           "id": "e1bbe0ba-673e-477a-8e4f-6b5d64c44a31",
           "input": true,
           "inputPort": "5321590",
-          "iterator": false,
           "name": "output_type",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "args",
@@ -2055,12 +2055,12 @@
           "id": "d7164ec3-1c45-4181-bf7f-5de3d8ab53cc",
           "input": true,
           "inputPort": "8952750",
-          "iterator": false,
           "name": "args",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "environ",
@@ -2068,12 +2068,12 @@
           "id": "131f2bdd-078b-496c-b86d-1eda92bec63e",
           "input": true,
           "inputPort": "8957af0",
-          "iterator": false,
           "name": "environ",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "terminal_output",
@@ -2081,12 +2081,12 @@
           "id": "019fbe20-5ea9-4106-a39d-0d667455ca22",
           "input": true,
           "inputPort": "895b990",
-          "iterator": false,
           "name": "terminal_output",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -2094,12 +2094,12 @@
           "id": "7d57893e-6e5f-4a27-a3dd-132c165c0aab",
           "input": true,
           "inputPort": "895fe70",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -2107,12 +2107,12 @@
           "id": "0a0356db-98da-47e6-81e4-119f0fd3cc0b",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "out_file",
           "output": true,
           "outputPort": "89647d0",
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         }
       ],
       "position": [
@@ -2152,12 +2152,12 @@
           "id": "7781eb73-b857-480d-8164-657b53c7384c",
           "input": true,
           "inputPort": "9969cc0",
-          "iterator": false,
           "name": "filtered_file",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true
+          "visible": true,
+          "iterator": false
         },
         {
           "base": "base_directory",
@@ -2165,12 +2165,12 @@
           "id": "839dae0d-c04b-4ee8-b518-6c476b64bd76",
           "input": true,
           "inputPort": "996bd60",
-          "iterator": false,
           "name": "base_directory",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "container",
@@ -2178,12 +2178,12 @@
           "id": "064a2ac1-692d-4afa-9b13-c400b28bf4e3",
           "input": true,
           "inputPort": "a3624a0",
-          "iterator": false,
           "name": "container",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "parameterization",
@@ -2191,12 +2191,12 @@
           "id": "00a6db71-cbfa-4818-9186-65d3cf7c2725",
           "input": true,
           "inputPort": "a3663b0",
-          "iterator": false,
           "name": "parameterization",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "strip_dir",
@@ -2204,12 +2204,12 @@
           "id": "0f7bb87a-92a2-4c77-8340-5bcd76c9f551",
           "input": true,
           "inputPort": "a36ad10",
-          "iterator": false,
           "name": "strip_dir",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "substitutions",
@@ -2217,12 +2217,12 @@
           "id": "ea3ff337-6268-4202-841b-e9be36b21c5a",
           "input": true,
           "inputPort": "a36f1b0",
-          "iterator": false,
           "name": "substitutions",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "regexp_substitutions",
@@ -2230,12 +2230,12 @@
           "id": "8b404bdd-902a-4355-a20e-945c2aa24d4e",
           "input": true,
           "inputPort": "a5446d0",
-          "iterator": false,
           "name": "regexp_substitutions",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "_outputs",
@@ -2243,12 +2243,12 @@
           "id": "1f4c4105-c4ba-4ebf-9754-df488ab7436c",
           "input": true,
           "inputPort": "a5490f0",
-          "iterator": false,
           "name": "_outputs",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "remove_dest_dir",
@@ -2256,12 +2256,12 @@
           "id": "e211b9bd-33e9-4f37-8c10-47d4f8b0fb9c",
           "input": true,
           "inputPort": "a54cf90",
-          "iterator": false,
           "name": "remove_dest_dir",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "creds_path",
@@ -2269,12 +2269,12 @@
           "id": "757c8f86-651d-4cf1-9b16-9dbbbf178c8f",
           "input": true,
           "inputPort": "a5518e0",
-          "iterator": false,
           "name": "creds_path",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "encrypt_bucket_keys",
@@ -2282,12 +2282,12 @@
           "id": "bd2d1218-4bcf-4ee6-9832-29d4a91aba68",
           "input": true,
           "inputPort": "a5557b0",
-          "iterator": false,
           "name": "encrypt_bucket_keys",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "bucket",
@@ -2295,12 +2295,12 @@
           "id": "83ef0662-7733-4b37-bf07-18e869289007",
           "input": true,
           "inputPort": "a559c80",
-          "iterator": false,
           "name": "bucket",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "local_copy",
@@ -2308,12 +2308,12 @@
           "id": "2fecb98d-a7ea-4a72-afb1-bbf74e622e46",
           "input": true,
           "inputPort": "a55e440",
-          "iterator": false,
           "name": "local_copy",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "ignore_exception",
@@ -2321,12 +2321,12 @@
           "id": "e594ee37-7bd2-4ef5-8b42-2a36d250620c",
           "input": true,
           "inputPort": "a562310",
-          "iterator": false,
           "name": "ignore_exception",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -2334,12 +2334,12 @@
           "id": "78e308ac-ab49-4bf8-a936-a596e72e516a",
           "input": false,
           "inputPort": false,
-          "iterator": false,
           "name": "out_file",
           "output": true,
           "outputPort": "a566d00",
           "value": "",
-          "visible": false
+          "visible": false,
+          "iterator": false
         }
       ],
       "position": [
