@@ -8,6 +8,7 @@ import nipype.pipeline as pe
 import nipype.interfaces.io as io
 import nipype.interfaces.fsl as fsl
 import nipype.algorithms.confounds as confounds
+import nipype.interfaces.utility as utility
 
 #Generic datagrabber module that wraps around glob in an
 my_io_S3DataGrabber = pe.Node(io.S3DataGrabber(outfields=["outfiles"]), name = 'my_io_S3DataGrabber')
@@ -52,6 +53,10 @@ my_fsl_TemporalFilter.inputs.highpass_sigma = 25
 my_io_DataSink = pe.Node(interface = io.DataSink(), name='my_io_DataSink', iterfield = [''])
 my_io_DataSink.inputs.base_directory = '/output'
 
+#Change the name of a file based on a mapped format string.
+my_utility_Rename = pe.Node(interface = utility.Rename(), name='my_utility_Rename', iterfield = [''])
+my_utility_Rename.inputs.format_string = "/output/output.nii.gz"
+
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
 analysisflow.connect(my_io_S3DataGrabber, "outfiles", my_fsl_SliceTimer, "in_file")
@@ -64,8 +69,9 @@ analysisflow.connect(my_fsl_Threshold, "out_file", my_confounds_ACompCor, "mask_
 analysisflow.connect(my_confounds_ACompCor, "components_file", my_fsl_FilterRegressor, "design_file")
 analysisflow.connect(my_confounds_TSNR, "detrended_file", my_fsl_FilterRegressor, "in_file")
 analysisflow.connect(my_fsl_FilterRegressor, "out_file", my_fsl_TemporalFilter, "in_file")
-analysisflow.connect(my_fsl_TemporalFilter, "out_file", my_io_DataSink, "filtered_file")
 analysisflow.connect(my_confounds_TSNR, "stddev_file", my_fsl_Threshold, "in_file")
+analysisflow.connect(my_fsl_TemporalFilter, "out_file", my_utility_Rename, "in_file")
+analysisflow.connect(my_fsl_TemporalFilter, "out_file", my_io_DataSink, "@datasink")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here

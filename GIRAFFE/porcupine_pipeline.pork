@@ -41,12 +41,16 @@
       "to": "596e0a0"
     },
     {
-      "from": "89647d0",
-      "to": "9969cc0"
-    },
-    {
       "from": "4111420",
       "to": "41cce40"
+    },
+    {
+      "from": "89647d0",
+      "to": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd"
+    },
+    {
+      "from": "89647d0",
+      "to": "28b5e16b-2d61-46cf-b778-29cb24821572"
     }
   ],
   "nodes": [
@@ -2147,19 +2151,6 @@
       ],
       "ports": [
         {
-          "base": "filtered_file",
-          "editable": true,
-          "id": "7781eb73-b857-480d-8164-657b53c7384c",
-          "input": true,
-          "inputPort": "9969cc0",
-          "name": "filtered_file",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": true,
-          "iterator": false
-        },
-        {
           "base": "base_directory",
           "editable": true,
           "id": "839dae0d-c04b-4ee8-b518-6c476b64bd76",
@@ -2340,11 +2331,24 @@
           "value": "",
           "visible": false,
           "iterator": false
+        },
+        {
+          "base": "@datasink",
+          "editable": true,
+          "id": "970eb1f7-d185-4cab-b83c-0aa484f22a9f",
+          "input": true,
+          "inputPort": "28b5e16b-2d61-46cf-b778-29cb24821572",
+          "name": "@datasink",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
         }
       ],
       "position": [
-        334.0831352501691,
-        33.9054144980264
+        411.28046191032536,
+        91.3628119589639
       ],
       "title": {
         "code": [
@@ -2365,6 +2369,117 @@
         ],
         "name": "io.DataSink",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#datasink"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "utility",
+        "base"
+      ],
+      "ports": [
+        {
+          "base": "in_file",
+          "editable": true,
+          "id": "11fa3609-2827-4cc2-bc17-1f99a99be50b",
+          "input": true,
+          "inputPort": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd",
+          "name": "in_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "format_string",
+          "editable": true,
+          "id": "3702c589-3127-497e-9ae2-ae19099f74ef",
+          "input": true,
+          "inputPort": "862df05d-d1ca-444c-8aa5-272ce85f9b71",
+          "name": "format_string",
+          "output": false,
+          "outputPort": false,
+          "value": "\"/output/output.nii.gz\"",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "keep_ext",
+          "editable": true,
+          "id": "5d85ce8d-0e4d-4b07-9af7-040151d4d3da",
+          "input": true,
+          "inputPort": "5ad0b9df-cc67-4161-9e5b-7b2ac7dc4dac",
+          "name": "keep_ext",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "parse_string",
+          "editable": true,
+          "id": "62c8dab0-e819-46d8-90d5-77bf265ce0ec",
+          "input": true,
+          "inputPort": "078cf01f-1c55-4460-b8aa-5bc3b73db881",
+          "name": "parse_string",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_fullpath",
+          "editable": true,
+          "id": "c805dc10-7364-4415-bbe9-861a4ae60758",
+          "input": true,
+          "inputPort": "5a14fe4e-36fa-4d3d-a40f-409c836b2ccb",
+          "name": "use_fullpath",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": false,
+          "id": "9fb33d45-4916-4c8a-97d6-fc30a71a491a",
+          "input": false,
+          "inputPort": false,
+          "name": "out_file",
+          "output": true,
+          "outputPort": "b0db489f-2037-47f1-8696-dfcad7b48f7c",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        397.87464661068384,
+        -134.836334201344
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Change the name of a file based on a mapped format string.",
+            "argument": {
+              "name": "utility.Rename()",
+              "import": "import nipype.interfaces.utility as utility"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, utility"
+            }
+          }
+        ],
+        "name": "utility.Rename",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
       }
     }
   ],
