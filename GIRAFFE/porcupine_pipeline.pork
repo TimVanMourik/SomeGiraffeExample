@@ -2168,8 +2168,8 @@
           "name": "base_directory",
           "output": false,
           "outputPort": false,
-          "value": "",
-          "visible": false,
+          "value": "'./output'",
+          "visible": true,
           "iterator": false
         },
         {

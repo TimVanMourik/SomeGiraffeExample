@@ -50,6 +50,7 @@ my_fsl_TemporalFilter.inputs.highpass_sigma = 25
 
 #Generic datasink module to store structured outputs
 my_io_DataSink = pe.Node(interface = io.DataSink(), name='my_io_DataSink', iterfield = [''])
+my_io_DataSink.inputs.base_directory = './output'
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
