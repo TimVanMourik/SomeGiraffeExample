@@ -47,10 +47,6 @@
     {
       "from": "89647d0",
       "to": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd"
-    },
-    {
-      "from": "89647d0",
-      "to": "28b5e16b-2d61-46cf-b778-29cb24821572"
     }
   ],
   "nodes": [
@@ -205,7 +201,7 @@
         }
       ],
       "position": [
-        -1810.83990631573,
+        -1755.244447331355,
         -369.3011342006869
       ],
       "title": {
@@ -433,8 +429,8 @@
         }
       ],
       "position": [
-        -1485.0829488560294,
-        -348.2027735587736
+        -1510.3535787388419,
+        -327.9862208243986
       ],
       "title": {
         "code": [
@@ -882,8 +878,8 @@
         }
       ],
       "position": [
-        -1276.1824681666421,
-        -300.11280054966727
+        -1288.8178441432046,
+        -340.54590601841727
       ],
       "title": {
         "code": [
@@ -1058,8 +1054,8 @@
         }
       ],
       "position": [
-        -1101.7230648895995,
-        -481.8429957777614
+        -1104.2501034638183,
+        -497.00537981096454
       ],
       "title": {
         "code": [
@@ -1221,8 +1217,8 @@
         }
       ],
       "position": [
-        -900.9467907431813,
-        -567.3255167273792
+        -898.4197521689625,
+        -552.1631021765979
       ],
       "title": {
         "code": [
@@ -1449,8 +1445,8 @@
         }
       ],
       "position": [
-        -704.4997461450441,
-        -491.1176114953433
+        -686.8102930200441,
+        -478.4822660363589
       ],
       "title": {
         "code": [
@@ -1703,8 +1699,8 @@
         }
       ],
       "position": [
-        -443.6993593509652,
-        -350.5563640673656
+        -479.07832663612146,
+        -345.50222588377187
       ],
       "title": {
         "code": [
@@ -1918,8 +1914,8 @@
         }
       ],
       "position": [
-        -199.83406260845013,
-        -176.12493653626098
+        -235.21302989360638,
+        -191.2873434576477
       ],
       "title": {
         "code": [
@@ -2120,8 +2116,8 @@
         }
       ],
       "position": [
-        66.52629910057797,
-        -53.6317528442454
+        28.62027035301938,
+        -48.57761466065165
       ],
       "title": {
         "code": [
@@ -2142,233 +2138,6 @@
         ],
         "name": "fsl.TemporalFilter",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
-      }
-    },
-    {
-      "category": [
-        "Nipype",
-        "io"
-      ],
-      "ports": [
-        {
-          "base": "base_directory",
-          "editable": true,
-          "id": "839dae0d-c04b-4ee8-b518-6c476b64bd76",
-          "input": true,
-          "inputPort": "996bd60",
-          "name": "base_directory",
-          "output": false,
-          "outputPort": false,
-          "value": "'/output'",
-          "visible": true,
-          "iterator": false
-        },
-        {
-          "base": "container",
-          "editable": true,
-          "id": "064a2ac1-692d-4afa-9b13-c400b28bf4e3",
-          "input": true,
-          "inputPort": "a3624a0",
-          "name": "container",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "parameterization",
-          "editable": true,
-          "id": "00a6db71-cbfa-4818-9186-65d3cf7c2725",
-          "input": true,
-          "inputPort": "a3663b0",
-          "name": "parameterization",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "strip_dir",
-          "editable": true,
-          "id": "0f7bb87a-92a2-4c77-8340-5bcd76c9f551",
-          "input": true,
-          "inputPort": "a36ad10",
-          "name": "strip_dir",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "substitutions",
-          "editable": true,
-          "id": "ea3ff337-6268-4202-841b-e9be36b21c5a",
-          "input": true,
-          "inputPort": "a36f1b0",
-          "name": "substitutions",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "regexp_substitutions",
-          "editable": true,
-          "id": "8b404bdd-902a-4355-a20e-945c2aa24d4e",
-          "input": true,
-          "inputPort": "a5446d0",
-          "name": "regexp_substitutions",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "_outputs",
-          "editable": true,
-          "id": "1f4c4105-c4ba-4ebf-9754-df488ab7436c",
-          "input": true,
-          "inputPort": "a5490f0",
-          "name": "_outputs",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "remove_dest_dir",
-          "editable": true,
-          "id": "e211b9bd-33e9-4f37-8c10-47d4f8b0fb9c",
-          "input": true,
-          "inputPort": "a54cf90",
-          "name": "remove_dest_dir",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "creds_path",
-          "editable": true,
-          "id": "757c8f86-651d-4cf1-9b16-9dbbbf178c8f",
-          "input": true,
-          "inputPort": "a5518e0",
-          "name": "creds_path",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "encrypt_bucket_keys",
-          "editable": true,
-          "id": "bd2d1218-4bcf-4ee6-9832-29d4a91aba68",
-          "input": true,
-          "inputPort": "a5557b0",
-          "name": "encrypt_bucket_keys",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "bucket",
-          "editable": true,
-          "id": "83ef0662-7733-4b37-bf07-18e869289007",
-          "input": true,
-          "inputPort": "a559c80",
-          "name": "bucket",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "local_copy",
-          "editable": true,
-          "id": "2fecb98d-a7ea-4a72-afb1-bbf74e622e46",
-          "input": true,
-          "inputPort": "a55e440",
-          "name": "local_copy",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "ignore_exception",
-          "editable": true,
-          "id": "e594ee37-7bd2-4ef5-8b42-2a36d250620c",
-          "input": true,
-          "inputPort": "a562310",
-          "name": "ignore_exception",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "out_file",
-          "editable": false,
-          "id": "78e308ac-ab49-4bf8-a936-a596e72e516a",
-          "input": false,
-          "inputPort": false,
-          "name": "out_file",
-          "output": true,
-          "outputPort": "a566d00",
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "@datasink",
-          "editable": true,
-          "id": "970eb1f7-d185-4cab-b83c-0aa484f22a9f",
-          "input": true,
-          "inputPort": "28b5e16b-2d61-46cf-b778-29cb24821572",
-          "name": "@datasink",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": true,
-          "iterator": false
-        }
-      ],
-      "position": [
-        411.28046191032536,
-        91.3628119589639
-      ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.io as io",
-              "name": "io.DataSink()"
-            },
-            "comment": "Generic datasink module to store structured outputs",
-            "language": "Nipype"
-          },
-          {
-            "argument": {
-              "name": "Nipype, io"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "io.DataSink",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#datasink"
       }
     },
     {
@@ -2400,7 +2169,7 @@
           "name": "format_string",
           "output": false,
           "outputPort": false,
-          "value": "\"/output/output.nii.gz\"",
+          "value": "\"/output/filteredData.nii.gz\"",
           "visible": true,
           "iterator": false
         },
@@ -2458,8 +2227,8 @@
         }
       ],
       "position": [
-        397.87464661068384,
-        -134.836334201344
+        281.45692200130884,
+        41.03843310212281
       ],
       "title": {
         "code": [

@@ -49,13 +49,9 @@ my_fsl_FilterRegressor.inputs.filter_columns = [1, 2]
 my_fsl_TemporalFilter = pe.Node(interface = fsl.TemporalFilter(), name='my_fsl_TemporalFilter', iterfield = [''])
 my_fsl_TemporalFilter.inputs.highpass_sigma = 25
 
-#Generic datasink module to store structured outputs
-my_io_DataSink = pe.Node(interface = io.DataSink(), name='my_io_DataSink', iterfield = [''])
-my_io_DataSink.inputs.base_directory = '/output'
-
 #Change the name of a file based on a mapped format string.
 my_utility_Rename = pe.Node(interface = utility.Rename(), name='my_utility_Rename', iterfield = [''])
-my_utility_Rename.inputs.format_string = "/output/output.nii.gz"
+my_utility_Rename.inputs.format_string = "/output/filteredData.nii.gz"
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
@@ -71,7 +67,6 @@ analysisflow.connect(my_confounds_TSNR, "detrended_file", my_fsl_FilterRegressor
 analysisflow.connect(my_fsl_FilterRegressor, "out_file", my_fsl_TemporalFilter, "in_file")
 analysisflow.connect(my_confounds_TSNR, "stddev_file", my_fsl_Threshold, "in_file")
 analysisflow.connect(my_fsl_TemporalFilter, "out_file", my_utility_Rename, "in_file")
-analysisflow.connect(my_fsl_TemporalFilter, "out_file", my_io_DataSink, "@datasink")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here
