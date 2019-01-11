@@ -51,7 +51,7 @@ my_fsl_TemporalFilter.inputs.highpass_sigma = 25
 
 #Change the name of a file based on a mapped format string.
 my_utility_Rename = pe.Node(interface = utility.Rename(), name='my_utility_Rename', iterfield = [''])
-my_utility_Rename.inputs.format_string = "/output/filteredData.nii.gz"
+my_utility_Rename.inputs.format_string = "/output/filtered.nii.gz"
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')

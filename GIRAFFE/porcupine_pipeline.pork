@@ -2116,8 +2116,8 @@
         }
       ],
       "position": [
-        28.62027035301938,
-        -48.57761466065165
+        68.09965572899594,
+        -75.49537932434794
       ],
       "title": {
         "code": [
@@ -2169,7 +2169,7 @@
           "name": "format_string",
           "output": false,
           "outputPort": false,
-          "value": "\"/output/filteredData.nii.gz\"",
+          "value": "\"/output/filtered.nii.gz\"",
           "visible": true,
           "iterator": false
         },
@@ -2227,8 +2227,8 @@
         }
       ],
       "position": [
-        281.45692200130884,
-        41.03843310212281
+        347.8540777630276,
+        -27.153240176685784
       ],
       "title": {
         "code": [
