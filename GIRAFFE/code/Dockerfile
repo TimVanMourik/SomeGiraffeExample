@@ -72,5 +72,5 @@ ENV FSLDIR=/opt/fsl \
 # Add custom analysis file as CMD
 #--------------------------------
 
-ADD ./workflow.py /code/workflow.py
+COPY ./workflow.py /code/workflow.py
 CMD ["python", "/code/workflow.py"]
