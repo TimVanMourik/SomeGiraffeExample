@@ -201,8 +201,8 @@
         }
       ],
       "position": [
-        -1755.244447331355,
-        -369.3011342006869
+        -1829.17877350323,
+        -318.1158925014681
       ],
       "title": {
         "code": [
@@ -221,7 +221,8 @@
             "language": "Docker"
           }
         ],
-        "name": "io.S3DataGrabber",
+        "name": "io_S3DataGrabber",
+        "class": "io.S3DataGrabber",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
       }
     },
@@ -429,8 +430,8 @@
         }
       ],
       "position": [
-        -1503.1508199497794,
-        -303.9768824454923
+        -1584.6679097935294,
+        -305.8726343986173
       ],
       "title": {
         "code": [
@@ -449,7 +450,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.SliceTimer",
+        "name": "fsl_SliceTimer",
+        "class": "fsl.SliceTimer",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer"
       }
     },
@@ -898,7 +900,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.MCFLIRT",
+        "name": "fsl_MCFLIRT",
+        "class": "fsl.MCFLIRT",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#mcflirt"
       }
     },
@@ -1054,8 +1057,8 @@
         }
       ],
       "position": [
-        -1104.2501034638183,
-        -497.00537981096454
+        -1119.4161190888183,
+        -493.21387590471454
       ],
       "title": {
         "code": [
@@ -1074,7 +1077,8 @@
             "language": "Docker"
           }
         ],
-        "name": "confounds.TSNR",
+        "name": "confounds_TSNR",
+        "class": "confounds.TSNR",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr"
       }
     },
@@ -1237,7 +1241,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.ImageStats",
+        "name": "fsl_ImageStats",
+        "class": "fsl.ImageStats",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats"
       }
     },
@@ -1445,7 +1450,7 @@
         }
       ],
       "position": [
-        -686.8102930200441,
+        -694.3933008325441,
         -478.4822660363589
       ],
       "title": {
@@ -1465,7 +1470,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.Threshold",
+        "name": "fsl_Threshold",
+        "class": "fsl.Threshold",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold"
       }
     },
@@ -1699,7 +1705,7 @@
         }
       ],
       "position": [
-        -479.07832663612146,
+        -494.24434226112146,
         -345.50222588377187
       ],
       "title": {
@@ -1719,7 +1725,8 @@
             "language": "Docker"
           }
         ],
-        "name": "confounds.ACompCor",
+        "name": "confounds_ACompCor",
+        "class": "confounds.ACompCor",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor"
       }
     },
@@ -1914,8 +1921,8 @@
         }
       ],
       "position": [
-        -232.8121052109892,
-        -191.2873434576477
+        -223.33335307475872,
+        -193.1830954107727
       ],
       "title": {
         "code": [
@@ -1934,7 +1941,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.FilterRegressor",
+        "name": "fsl_FilterRegressor",
+        "class": "fsl.FilterRegressor",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor"
       }
     },
@@ -2116,8 +2124,8 @@
         }
       ],
       "position": [
-        68.09965572899594,
-        -75.49537932434794
+        58.620911222160004,
+        -83.07837760010477
       ],
       "title": {
         "code": [
@@ -2136,7 +2144,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.TemporalFilter",
+        "name": "fsl_TemporalFilter",
+        "class": "fsl.TemporalFilter",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
       }
     },
@@ -2227,8 +2236,8 @@
         }
       ],
       "position": [
-        347.8540777630276,
-        -27.153240176685784
+        323.2093328899807,
+        -25.25749080146167
       ],
       "title": {
         "code": [
@@ -2247,7 +2256,8 @@
             }
           }
         ],
-        "name": "utility.Rename",
+        "name": "utility_Rename",
+        "class": "utility.Rename",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
       }
     }
