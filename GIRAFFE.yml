@@ -4,5 +4,5 @@ tools:
     file:
       - GIRAFFE/porcupine_pipeline.pork
   armadillo:
-    image:
-      - neurovault-31997
+    neurovault:
+      - 31997
