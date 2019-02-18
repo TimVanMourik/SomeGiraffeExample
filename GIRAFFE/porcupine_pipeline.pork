@@ -47,6 +47,10 @@
     {
       "from": "89647d0",
       "to": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd"
+    },
+    {
+      "from": "76ba750",
+      "to": "5f005e20-4214-475f-9d4e-018b7535aa61"
     }
   ],
   "nodes": [
@@ -78,7 +82,7 @@
           "name": "bucket",
           "output": false,
           "outputPort": false,
-          "value": "'openneuro'",
+          "value": "'openneurotest'",
           "visible": true,
           "iterator": false
         },
@@ -201,8 +205,8 @@
         }
       ],
       "position": [
-        -1829.17877350323,
-        -318.1158925014681
+        -1907.970033268855,
+        -368.9489613491244
       ],
       "title": {
         "code": [
@@ -2259,6 +2263,352 @@
         "name": "utility_Rename",
         "class": "utility.Rename",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "spm",
+        "preprocess"
+      ],
+      "ports": [
+        {
+          "base": "in_files",
+          "editable": true,
+          "id": "dbbfa778-5d64-4449-a5cf-cbd5d063270b",
+          "input": true,
+          "inputPort": "5f005e20-4214-475f-9d4e-018b7535aa61",
+          "name": "in_files",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "jobtype",
+          "editable": true,
+          "id": "9b0880a2-404a-41d1-a0de-2c0452494cd7",
+          "input": true,
+          "inputPort": "a86da4bb-ae53-4d87-839e-28fc5682ea73",
+          "name": "jobtype",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "quality",
+          "editable": true,
+          "id": "89862498-907c-4bc4-908b-202c498a182d",
+          "input": true,
+          "inputPort": "1bdc89b1-f864-4ed2-bfdd-180677b14d41",
+          "name": "quality",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "fwhm",
+          "editable": true,
+          "id": "81436ebe-4fa5-47f3-9d79-2cc0467fce6c",
+          "input": true,
+          "inputPort": "e561f771-e8a2-4ad9-a402-e68c2687d39f",
+          "name": "fwhm",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "separation",
+          "editable": true,
+          "id": "60919065-af02-44f1-add8-ee8ffbd3446a",
+          "input": true,
+          "inputPort": "322b5265-36ad-4a2b-b1e7-5b8a8c23c899",
+          "name": "separation",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "register_to_mean",
+          "editable": true,
+          "id": "ed354fbf-27aa-41b8-8d79-dccf6045bfce",
+          "input": true,
+          "inputPort": "f8de46d5-d555-45b9-a483-b6c7d7639dd2",
+          "name": "register_to_mean",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "weight_img",
+          "editable": true,
+          "id": "81189e55-34bf-420e-94ab-4b7e135f64db",
+          "input": true,
+          "inputPort": "07e88acb-6aa5-49ff-8296-ee8ecaeb6c86",
+          "name": "weight_img",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "interp",
+          "editable": true,
+          "id": "17714d04-ee5e-4852-8f72-3bda5ec56c2c",
+          "input": true,
+          "inputPort": "24bee681-49fd-45af-b259-ed4ab3adb788",
+          "name": "interp",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "wrap",
+          "editable": true,
+          "id": "a2b73279-1a05-4daa-a685-416e0c9598a8",
+          "input": true,
+          "inputPort": "eb5a02e1-3b4a-4555-8f4a-ce91387597c4",
+          "name": "wrap",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "write_which",
+          "editable": true,
+          "id": "9dd1ba08-3c6e-49a2-8b53-203e9f0be8a1",
+          "input": true,
+          "inputPort": "b420964f-993b-4a69-9464-b4e0ef017c7d",
+          "name": "write_which",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "write_interp",
+          "editable": true,
+          "id": "9ed599fb-d4cc-4a95-af9c-784fc621ea26",
+          "input": true,
+          "inputPort": "33980241-3fd4-482c-824e-8f283ec0a604",
+          "name": "write_interp",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "write_wrap",
+          "editable": true,
+          "id": "799eea03-dbd6-4562-9fa7-3eedad2b0069",
+          "input": true,
+          "inputPort": "09392733-b82c-47a1-a44e-e638a47d96b8",
+          "name": "write_wrap",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "write_mask",
+          "editable": true,
+          "id": "a1381ec0-a575-490b-9fe1-fbd4a4f1917e",
+          "input": true,
+          "inputPort": "c11dea3c-f233-4d61-91da-1b49024952be",
+          "name": "write_mask",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "out_prefix",
+          "editable": true,
+          "id": "1b9f6222-8d4d-402c-b7bf-03dd8fe3d7f5",
+          "input": true,
+          "inputPort": "a3387e7d-b002-4885-af48-a875733944cf",
+          "name": "out_prefix",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "matlab_cmd",
+          "editable": true,
+          "id": "c39abc0b-7dbd-4501-9793-7bde18f511b8",
+          "input": true,
+          "inputPort": "b556c62a-3d17-4e92-b149-93a1724b8216",
+          "name": "matlab_cmd",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "paths",
+          "editable": true,
+          "id": "736cfb01-eb68-4366-a729-852921936361",
+          "input": true,
+          "inputPort": "a8db63e2-d65d-4ec1-bf8e-32d8852a98f2",
+          "name": "paths",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "mfile",
+          "editable": true,
+          "id": "4abe5fef-a0f0-4ec8-80c5-31f914d10d31",
+          "input": true,
+          "inputPort": "527d32a4-f3bc-41a4-85e3-a4c5cc536e33",
+          "name": "mfile",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_mcr",
+          "editable": true,
+          "id": "2822b620-0ffe-48fc-9411-f8ac7b58921d",
+          "input": true,
+          "inputPort": "6a05e5ff-3806-46e6-908e-1cb1acd6aa3a",
+          "name": "use_mcr",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_v8struct",
+          "editable": true,
+          "id": "dc1cdccc-6cf1-4407-90f6-3cc5e916b3a0",
+          "input": true,
+          "inputPort": "4d8ea435-b0bd-4c0d-8721-cd9189b1e79e",
+          "name": "use_v8struct",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "88d9dee0-0146-4f75-9474-abf8a6d748ce",
+          "input": true,
+          "inputPort": "137a5f7f-089c-4756-9cbd-9d41632263c1",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "mean_image",
+          "editable": false,
+          "id": "454d7f46-4974-40bc-b6ab-23dd2e3a1bcd",
+          "input": false,
+          "inputPort": false,
+          "name": "mean_image",
+          "output": true,
+          "outputPort": "07b250da-7a9f-4bb9-8a9f-afc2b1c9af8e",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "modified_in_files",
+          "editable": false,
+          "id": "21133e43-27fe-4a9e-ab41-1c1b0283a39a",
+          "input": false,
+          "inputPort": false,
+          "name": "modified_in_files",
+          "output": true,
+          "outputPort": "a5c556b9-1227-4416-9a76-766a99879d3b",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "realigned_files",
+          "editable": false,
+          "id": "28c15688-f7fc-4d5c-94f3-9f1594809ff2",
+          "input": false,
+          "inputPort": false,
+          "name": "realigned_files",
+          "output": true,
+          "outputPort": "492ca470-dcb0-4f8b-b223-d514337e549d",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "realignment_parameters",
+          "editable": false,
+          "id": "9d4ad8ff-c3dd-4e49-bf53-d787a5688813",
+          "input": false,
+          "inputPort": false,
+          "name": "realignment_parameters",
+          "output": true,
+          "outputPort": "63010820-b8c9-4379-896b-6d84880d8271",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -1183.0238881640967,
+        -172.86502761778607
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Use spm_realign for estimating within modality rigid body alignment",
+            "argument": {
+              "name": "spm.Realign()",
+              "import": "import nipype.interfaces.spm as spm"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, spm"
+            }
+          }
+        ],
+        "name": "spm_Realign",
+        "class": "spm.Realign",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.spm/preprocess.html#realign"
       }
     }
   ],

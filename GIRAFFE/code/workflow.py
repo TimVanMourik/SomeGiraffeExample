@@ -9,10 +9,11 @@ import nipype.interfaces.io as io
 import nipype.interfaces.fsl as fsl
 import nipype.algorithms.confounds as confounds
 import nipype.interfaces.utility as utility
+import nipype.interfaces.spm as spm
 
 #Generic datagrabber module that wraps around glob in an
 io_S3DataGrabber = pe.Node(io.S3DataGrabber(outfields=["outfiles"]), name = 'io_S3DataGrabber')
-io_S3DataGrabber.inputs.bucket = 'openneuro'
+io_S3DataGrabber.inputs.bucket = 'openneurotest'
 io_S3DataGrabber.inputs.sort_filelist = True
 io_S3DataGrabber.inputs.template = 'sub-01/func/sub-01_task-simon_run-1_bold.nii.gz'
 io_S3DataGrabber.inputs.anon = True
@@ -53,6 +54,9 @@ fsl_TemporalFilter.inputs.highpass_sigma = 25
 utility_Rename = pe.Node(interface = utility.Rename(), name='utility_Rename', iterfield = [''])
 utility_Rename.inputs.format_string = "/output/filtered.nii.gz"
 
+#Use spm_realign for estimating within modality rigid body alignment
+spm_Realign = pe.Node(interface = spm.Realign(), name='spm_Realign', iterfield = [''])
+
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
 analysisflow.connect(io_S3DataGrabber, "outfiles", fsl_SliceTimer, "in_file")
@@ -67,6 +71,7 @@ analysisflow.connect(confounds_TSNR, "detrended_file", fsl_FilterRegressor, "in_
 analysisflow.connect(fsl_FilterRegressor, "out_file", fsl_TemporalFilter, "in_file")
 analysisflow.connect(confounds_TSNR, "stddev_file", fsl_Threshold, "in_file")
 analysisflow.connect(fsl_TemporalFilter, "out_file", utility_Rename, "in_file")
+analysisflow.connect(fsl_SliceTimer, "slice_time_corrected_file", spm_Realign, "in_files")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here
