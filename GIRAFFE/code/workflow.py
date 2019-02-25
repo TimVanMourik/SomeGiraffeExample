@@ -8,7 +8,6 @@ import nipype.pipeline as pe
 import nipype.interfaces.io as io
 import nipype.interfaces.fsl as fsl
 import nipype.algorithms.confounds as confounds
-import nipype.interfaces.utility as utility
 
 #Generic datagrabber module that wraps around glob in an
 io_S3DataGrabber = pe.Node(io.S3DataGrabber(infields=["subj_id", "run_num", "field_template"], outfields=["func", "struct"]), name = 'io_S3DataGrabber')
@@ -24,45 +23,41 @@ io_S3DataGrabber.inputs.field_template = dict(func='%s/BOLD/task001_%s/bold.nii.
 io_S3DataGrabber.inputs.template_args =  dict(func=[['subj_id', 'run_num']], struct=[['subj_id']])
 
 #Wraps command **slicetimer**
-fsl_SliceTimer = pe.Node(interface = fsl.SliceTimer(), name='fsl_SliceTimer', iterfield = [''])
+fsl_SliceTimer = pe.MapNode(interface = fsl.SliceTimer(), name='fsl_SliceTimer', iterfield = ['in_file'])
 
 #Wraps command **mcflirt**
-fsl_MCFLIRT = pe.Node(interface = fsl.MCFLIRT(), name='fsl_MCFLIRT', iterfield = [''])
+fsl_MCFLIRT = pe.MapNode(interface = fsl.MCFLIRT(), name='fsl_MCFLIRT', iterfield = ['in_file'])
 
 #Computes the time-course SNR for a time series
-confounds_TSNR = pe.Node(interface = confounds.TSNR(), name='confounds_TSNR', iterfield = [''])
+confounds_TSNR = pe.MapNode(interface = confounds.TSNR(), name='confounds_TSNR', iterfield = ['in_file'])
 confounds_TSNR.inputs.regress_poly = 3
 
 #Wraps command **fslstats**
-fsl_ImageStats = pe.Node(interface = fsl.ImageStats(), name='fsl_ImageStats', iterfield = [''])
+fsl_ImageStats = pe.MapNode(interface = fsl.ImageStats(), name='fsl_ImageStats', iterfield = ['in_file'])
 fsl_ImageStats.inputs.op_string = '-p 98'
 
 #Wraps command **fslmaths**
-fsl_Threshold = pe.Node(interface = fsl.Threshold(), name='fsl_Threshold', iterfield = [''])
+fsl_Threshold = pe.MapNode(interface = fsl.Threshold(), name='fsl_Threshold', iterfield = ['thresh', 'in_file'])
 fsl_Threshold.inputs.args = '-bin'
 
 #Anatomical compcor: for inputs and outputs, see CompCor.
-confounds_ACompCor = pe.Node(interface = confounds.ACompCor(), name='confounds_ACompCor', iterfield = [''])
+confounds_ACompCor = pe.MapNode(interface = confounds.ACompCor(), name='confounds_ACompCor', iterfield = ['realigned_file', 'mask_files'])
 confounds_ACompCor.inputs.num_components = 2
 
 #Wraps command **fsl_regfilt**
-fsl_FilterRegressor = pe.Node(interface = fsl.FilterRegressor(), name='fsl_FilterRegressor', iterfield = [''])
+fsl_FilterRegressor = pe.MapNode(interface = fsl.FilterRegressor(), name='fsl_FilterRegressor', iterfield = ['in_file', 'design_file'])
 fsl_FilterRegressor.inputs.filter_columns = [1, 2]
 
 #Wraps command **fslmaths**
-fsl_TemporalFilter = pe.Node(interface = fsl.TemporalFilter(), name='fsl_TemporalFilter', iterfield = [''])
+fsl_TemporalFilter = pe.MapNode(interface = fsl.TemporalFilter(), name='fsl_TemporalFilter', iterfield = ['in_file'])
 fsl_TemporalFilter.inputs.highpass_sigma = 25
 
-#Change the name of a file based on a mapped format string.
-utility_Rename = pe.Node(interface = utility.Rename(), name='utility_Rename', iterfield = [''])
-utility_Rename.inputs.format_string = "/output/filtered.nii.gz"
-
 #Wraps the executable command ``bet``.
-fsl_BET = pe.Node(interface = fsl.BET(), name='fsl_BET', iterfield = [''])
+fsl_BET = pe.MapNode(interface = fsl.BET(), name='fsl_BET', iterfield = ['in_file'])
 
-#Change the name of a file based on a mapped format string.
-utility_Rename_1 = pe.Node(interface = utility.Rename(), name='utility_Rename_1', iterfield = [''])
-utility_Rename_1.inputs.format_string = "/output/skullstripped.nii.gz"
+#Generic datasink module to store structured outputs
+io_DataSink = pe.Node(interface = io.DataSink(), name='io_DataSink')
+io_DataSink.inputs.base_directory = '/output/'
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
@@ -76,10 +71,10 @@ analysisflow.connect(confounds_ACompCor, "components_file", fsl_FilterRegressor,
 analysisflow.connect(confounds_TSNR, "detrended_file", fsl_FilterRegressor, "in_file")
 analysisflow.connect(fsl_FilterRegressor, "out_file", fsl_TemporalFilter, "in_file")
 analysisflow.connect(confounds_TSNR, "stddev_file", fsl_Threshold, "in_file")
-analysisflow.connect(fsl_TemporalFilter, "out_file", utility_Rename, "in_file")
 analysisflow.connect(io_S3DataGrabber, "func", fsl_SliceTimer, "in_file")
 analysisflow.connect(io_S3DataGrabber, "struct", fsl_BET, "in_file")
-analysisflow.connect(fsl_BET, "out_file", utility_Rename_1, "in_file")
+analysisflow.connect(fsl_TemporalFilter, "out_file", io_DataSink, "filtered")
+analysisflow.connect(fsl_BET, "out_file", io_DataSink, "skullstripped")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here

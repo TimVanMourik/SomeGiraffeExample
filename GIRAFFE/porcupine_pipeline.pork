@@ -41,10 +41,6 @@
       "to": "41cce40"
     },
     {
-      "from": "89647d0",
-      "to": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd"
-    },
-    {
       "from": "8f464522-5291-43c3-b261-1c2dd606e55d",
       "to": "5876410"
     },
@@ -53,8 +49,12 @@
       "to": "4714c6b9-36a2-4cf1-90b3-4673fe38324a"
     },
     {
+      "from": "89647d0",
+      "to": "3521e8ce-237c-49c7-886c-81b94dfa3712"
+    },
+    {
       "from": "add453b9-ecdb-48a3-80cb-d9b7e57bf37f",
-      "to": "6365b9e8-0d6d-4d5d-b893-9fcfd440ca86"
+      "to": "fb89fc7f-fa3d-4999-80cc-2650df244ec9"
     }
   ],
   "nodes": [
@@ -317,7 +317,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "out_file",
@@ -546,7 +546,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "out_file",
@@ -996,7 +996,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "regress_poly",
@@ -1173,7 +1173,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "op_string",
@@ -1337,7 +1337,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "in_file",
@@ -1350,7 +1350,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "direction",
@@ -1566,7 +1566,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "mask_files",
@@ -1579,7 +1579,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "merge_method",
@@ -1821,7 +1821,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "design_file",
@@ -1834,7 +1834,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "filter_columns",
@@ -2037,7 +2037,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "lowpass_sigma",
@@ -2225,118 +2225,6 @@
     {
       "category": [
         "Nipype",
-        "utility",
-        "base"
-      ],
-      "ports": [
-        {
-          "base": "in_file",
-          "editable": true,
-          "id": "11fa3609-2827-4cc2-bc17-1f99a99be50b",
-          "input": true,
-          "inputPort": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd",
-          "name": "in_file",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": true,
-          "iterator": false
-        },
-        {
-          "base": "format_string",
-          "editable": true,
-          "id": "3702c589-3127-497e-9ae2-ae19099f74ef",
-          "input": true,
-          "inputPort": "862df05d-d1ca-444c-8aa5-272ce85f9b71",
-          "name": "format_string",
-          "output": false,
-          "outputPort": false,
-          "value": "\"/output/filtered.nii.gz\"",
-          "visible": true,
-          "iterator": false
-        },
-        {
-          "base": "keep_ext",
-          "editable": true,
-          "id": "5d85ce8d-0e4d-4b07-9af7-040151d4d3da",
-          "input": true,
-          "inputPort": "5ad0b9df-cc67-4161-9e5b-7b2ac7dc4dac",
-          "name": "keep_ext",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "parse_string",
-          "editable": true,
-          "id": "62c8dab0-e819-46d8-90d5-77bf265ce0ec",
-          "input": true,
-          "inputPort": "078cf01f-1c55-4460-b8aa-5bc3b73db881",
-          "name": "parse_string",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "use_fullpath",
-          "editable": true,
-          "id": "c805dc10-7364-4415-bbe9-861a4ae60758",
-          "input": true,
-          "inputPort": "5a14fe4e-36fa-4d3d-a40f-409c836b2ccb",
-          "name": "use_fullpath",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "out_file",
-          "editable": false,
-          "id": "9fb33d45-4916-4c8a-97d6-fc30a71a491a",
-          "input": false,
-          "inputPort": false,
-          "name": "out_file",
-          "output": true,
-          "outputPort": "b0db489f-2037-47f1-8696-dfcad7b48f7c",
-          "value": "",
-          "visible": true,
-          "iterator": false
-        }
-      ],
-      "position": [
-        323.2093328899807,
-        -25.25749080146167
-      ],
-      "title": {
-        "code": [
-          {
-            "language": "Nipype",
-            "comment": "Change the name of a file based on a mapped format string.",
-            "argument": {
-              "name": "utility.Rename()",
-              "import": "import nipype.interfaces.utility as utility"
-            }
-          },
-          {
-            "language": "Docker",
-            "argument": {
-              "name": "Nipype, utility"
-            }
-          }
-        ],
-        "name": "utility_Rename",
-        "class": "utility.Rename",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
-      }
-    },
-    {
-      "category": [
-        "Nipype",
         "fsl",
         "preprocess"
       ],
@@ -2352,7 +2240,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "out_file",
@@ -2800,43 +2688,29 @@
     {
       "category": [
         "Nipype",
-        "utility",
-        "base"
+        "io"
       ],
       "ports": [
         {
-          "base": "in_file",
+          "base": "base_directory",
           "editable": true,
-          "id": "2d5ee127-cd71-4581-9923-c534bfdc6751",
+          "id": "0fdcd047-afa2-4bbd-8d44-0eb536c8706d",
           "input": true,
-          "inputPort": "6365b9e8-0d6d-4d5d-b893-9fcfd440ca86",
-          "name": "in_file",
+          "inputPort": "b31d809a-b4a2-49fc-95f7-c0cee67330da",
+          "name": "base_directory",
           "output": false,
           "outputPort": false,
-          "value": "",
-          "visible": true,
+          "value": "'/output/'",
+          "visible": false,
           "iterator": false
         },
         {
-          "base": "format_string",
+          "base": "container",
           "editable": true,
-          "id": "e8cbdf23-37af-482d-b18b-03c96899214e",
+          "id": "b2b95092-ff6c-4757-a97d-20a5ed60b0bd",
           "input": true,
-          "inputPort": "0d8c3642-37db-4c16-9a21-70cb8f2634b4",
-          "name": "format_string",
-          "output": false,
-          "outputPort": false,
-          "value": "\"/output/skullstripped.nii.gz\"",
-          "visible": true,
-          "iterator": false
-        },
-        {
-          "base": "keep_ext",
-          "editable": true,
-          "id": "44c69186-4c25-4837-b74e-cdcaf77b08a0",
-          "input": true,
-          "inputPort": "7b86f3ce-8233-4e61-8326-b7bdd0185466",
-          "name": "keep_ext",
+          "inputPort": "9e12f743-133a-4ace-b5d2-60059a9f9d89",
+          "name": "container",
           "output": false,
           "outputPort": false,
           "value": "",
@@ -2844,12 +2718,12 @@
           "iterator": false
         },
         {
-          "base": "parse_string",
+          "base": "parameterization",
           "editable": true,
-          "id": "59eaf115-9947-4e6e-8d22-78e7946409dc",
+          "id": "5e2bf322-6102-4d26-9932-879b85875bb0",
           "input": true,
-          "inputPort": "d6487c22-def1-442e-a6da-a64fa9db5f50",
-          "name": "parse_string",
+          "inputPort": "6c067724-9fd0-471c-b6e5-bc52782f5556",
+          "name": "parameterization",
           "output": false,
           "outputPort": false,
           "value": "",
@@ -2857,12 +2731,116 @@
           "iterator": false
         },
         {
-          "base": "use_fullpath",
+          "base": "strip_dir",
           "editable": true,
-          "id": "c84b0f42-9a84-4da5-a3e3-439d29b6830d",
+          "id": "df3c86a3-b7cd-43b0-92da-988ac58f8885",
           "input": true,
-          "inputPort": "4add6ac3-157f-45f1-b212-bb3abd40c918",
-          "name": "use_fullpath",
+          "inputPort": "911a4a8f-ad2f-4cfb-a34f-9d10f60664e0",
+          "name": "strip_dir",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "substitutions",
+          "editable": true,
+          "id": "f69aedae-ba16-4a54-924f-9a49ecb818e3",
+          "input": true,
+          "inputPort": "78b7e72f-b531-493f-9930-91453562b3bc",
+          "name": "substitutions",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "regexp_substitutions",
+          "editable": true,
+          "id": "3ba37817-3597-4e8d-b67c-ff838f2202c7",
+          "input": true,
+          "inputPort": "9a2497d3-4322-49ca-bedc-d0a32d9c4d90",
+          "name": "regexp_substitutions",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "_outputs",
+          "editable": true,
+          "id": "4db44d97-15bc-4aef-b17a-e44eb9843e39",
+          "input": true,
+          "inputPort": "3f64a979-84de-47eb-8704-d4905ef89acb",
+          "name": "_outputs",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "remove_dest_dir",
+          "editable": true,
+          "id": "eadb9fc8-8b0e-4a5f-8efd-f71024d899e5",
+          "input": true,
+          "inputPort": "eec0bef6-9e42-4538-8886-7db1531c3219",
+          "name": "remove_dest_dir",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "creds_path",
+          "editable": true,
+          "id": "9639e701-bd3a-4e78-b318-61964b2b8c91",
+          "input": true,
+          "inputPort": "f044f88e-c627-47e5-bcbf-a16137df1bb3",
+          "name": "creds_path",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "encrypt_bucket_keys",
+          "editable": true,
+          "id": "88eeedd5-2537-4059-b514-aa883b85139b",
+          "input": true,
+          "inputPort": "50da7fff-312d-404d-92d0-7f4abda25a40",
+          "name": "encrypt_bucket_keys",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bucket",
+          "editable": true,
+          "id": "2728d818-de84-452c-a2c1-c9cf9dc57d33",
+          "input": true,
+          "inputPort": "69bda61c-ee37-487f-bcc0-c20f7ed05c52",
+          "name": "bucket",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "local_copy",
+          "editable": true,
+          "id": "237f7a74-c4fc-4435-8524-c4a6448dee47",
+          "input": true,
+          "inputPort": "1fcc3d14-3d60-49be-9116-d30bbf7a9f86",
+          "name": "local_copy",
           "output": false,
           "outputPort": false,
           "value": "",
@@ -2872,41 +2850,67 @@
         {
           "base": "out_file",
           "editable": false,
-          "id": "8a9592dc-66c5-4807-99dd-69d16a68a347",
+          "id": "428418bd-af3f-4c55-846f-67177d4df967",
           "input": false,
           "inputPort": false,
           "name": "out_file",
           "output": true,
-          "outputPort": "154b971a-bfdf-40a0-bef2-1973fafed4f0",
+          "outputPort": "68f095f3-119f-4b91-b243-2ac361f103f2",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "skullstripped",
+          "editable": true,
+          "id": "cd2edb7b-a619-4c74-a778-3ce525bb6d80",
+          "input": true,
+          "inputPort": "fb89fc7f-fa3d-4999-80cc-2650df244ec9",
+          "name": "skullstripped",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "filtered",
+          "editable": true,
+          "id": "6ede6ced-6ab2-411c-a5fc-7e9c34a031a5",
+          "input": true,
+          "inputPort": "3521e8ce-237c-49c7-886c-81b94dfa3712",
+          "name": "filtered",
+          "output": false,
+          "outputPort": false,
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        -1312.680742793613,
-        -49.30371348822925
+        365.12981158423486,
+        61.145361519753294
       ],
       "title": {
         "code": [
           {
             "language": "Nipype",
-            "comment": "Change the name of a file based on a mapped format string.",
+            "comment": "Generic datasink module to store structured outputs",
             "argument": {
-              "name": "utility.Rename()",
-              "import": "import nipype.interfaces.utility as utility"
+              "name": "io.DataSink()",
+              "import": "import nipype.interfaces.io as io"
             }
           },
           {
             "language": "Docker",
             "argument": {
-              "name": "Nipype, utility"
+              "name": "Nipype, io"
             }
           }
         ],
-        "name": "utility_Rename_1",
-        "class": "utility.Rename",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
+        "name": "io_DataSink",
+        "class": "io.DataSink",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#datasink"
       }
     }
   ],
