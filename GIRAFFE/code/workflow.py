@@ -11,17 +11,17 @@ import nipype.algorithms.confounds as confounds
 import nipype.interfaces.utility as utility
 
 #Generic datagrabber module that wraps around glob in an
-io_S3DataGrabber = pe.Node(io.S3DataGrabber(infields=["subj_id, run_num, field_template"], outfields=["func, struct"]), name = 'io_S3DataGrabber')
-io_S3DataGrabber.inputs.bucket = 'openneuro'
+io_S3DataGrabber = pe.Node(io.S3DataGrabber(infields=["subj_id", "run_num", "field_template"], outfields=["func", "struct"]), name = 'io_S3DataGrabber')
+io_S3DataGrabber.inputs.bucket = 'openfmri'
 io_S3DataGrabber.inputs.sort_filelist = True
 io_S3DataGrabber.inputs.template = '*'
 io_S3DataGrabber.inputs.anon = True
-io_S3DataGrabber.inputs.bucket_path = 'ds000101/ds000101_R2.0.0/uncompressed/'
+io_S3DataGrabber.inputs.bucket_path = 'ds001/'
 io_S3DataGrabber.inputs.local_directory = '/tmp'
 io_S3DataGrabber.inputs.subj_id = ['sub001', 'sub002']
 io_S3DataGrabber.inputs.run_num = ['run001', 'run003']
-io_S3DataGrabber.inputs.field_template = dict(func='%s/BOLD/task001_%s/bold.nii.gz',                                     struct='%s/anatomy/highres001_brain.nii.gz')
-io_S3DataGrabber.inputs.template_args =  dict(         func=[['subj_id', 'run_num']], struct=[['subj_id']])
+io_S3DataGrabber.inputs.field_template = dict(func='%s/BOLD/task001_%s/bold.nii.gz', struct='%s/anatomy/highres001_brain.nii.gz')
+io_S3DataGrabber.inputs.template_args =  dict(func=[['subj_id', 'run_num']], struct=[['subj_id']])
 
 #Wraps command **slicetimer**
 fsl_SliceTimer = pe.Node(interface = fsl.SliceTimer(), name='fsl_SliceTimer', iterfield = [''])

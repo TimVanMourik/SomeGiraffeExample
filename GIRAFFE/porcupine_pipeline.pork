@@ -73,7 +73,7 @@
           "name": "bucket",
           "output": false,
           "outputPort": false,
-          "value": "'openneuro'",
+          "value": "'openfmri'",
           "visible": true,
           "iterator": false
         },
@@ -138,7 +138,7 @@
           "name": "bucket_path",
           "output": false,
           "outputPort": false,
-          "value": "'ds000101/ds000101_R2.0.0/uncompressed/'",
+          "value": "'ds001/'",
           "visible": true,
           "iterator": false
         },
@@ -229,7 +229,7 @@
           "name": "field_template",
           "output": false,
           "outputPort": false,
-          "value": "dict(func='%s/BOLD/task001_%s/bold.nii.gz',                                     struct='%s/anatomy/highres001_brain.nii.gz')",
+          "value": "dict(func='%s/BOLD/task001_%s/bold.nii.gz', struct='%s/anatomy/highres001_brain.nii.gz')",
           "visible": true,
           "iterator": false
         },
@@ -242,7 +242,7 @@
           "name": "template_args",
           "output": false,
           "outputPort": false,
-          "value": " dict(         func=[['subj_id', 'run_num']], struct=[['subj_id']])",
+          "value": " dict(func=[['subj_id', 'run_num']], struct=[['subj_id']])",
           "visible": true,
           "iterator": false
         },
