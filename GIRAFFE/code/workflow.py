@@ -59,7 +59,7 @@ io_DataSink = pe.Node(interface = io.DataSink(), name='io_DataSink')
 io_DataSink.inputs.base_directory = '/output/'
 
 #Basic interface class generates identity mappings
-(utility.IdentityInterface(fields=['']), name='Parameters', iterfield = [''])
+Parameters = pe.Node(utility.IdentityInterface(fields=[""]), name='Parameters')
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
