@@ -59,7 +59,9 @@ io_DataSink = pe.Node(interface = io.DataSink(), name='io_DataSink')
 io_DataSink.inputs.base_directory = '/output/'
 
 #Basic interface class generates identity mappings
-Parameters = pe.Node(utility.IdentityInterface(fields=[""]), name='Parameters')
+Parameters = pe.Node(utility.IdentityInterface(fields=["subj_id", "run_num"]), name='Parameters', iterfield = ['subj_id'])
+Parameters.inputs.run_num = ['run001', 'run003']
+Parameters.iterables = [('subj_id', ['sub001', 'sub002'])]
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')

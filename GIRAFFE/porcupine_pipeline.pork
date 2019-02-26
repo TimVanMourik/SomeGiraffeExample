@@ -57,11 +57,11 @@
       "to": "fb89fc7f-fa3d-4999-80cc-2650df244ec9"
     },
     {
-      "from": "9202ba3e-6262-44bd-822d-7d41839d4581",
+      "from": "da2f6459-d6c2-4380-87d7-586c8f8a5256",
       "to": "6d01cb5d-c5a4-4b15-a24d-101a9725c184"
     },
     {
-      "from": "8dc170bd-5faf-4a00-9f02-93e09dae43d6",
+      "from": "22a98997-5a24-4a15-9bb6-fc87b6ff4ad7",
       "to": "c9fba37a-20f1-4d81-b0f2-a4da8d65611c"
     }
   ],
@@ -2931,33 +2931,33 @@
         {
           "base": "subj_id",
           "editable": true,
-          "id": "d72eb08c-6767-472e-812d-4f395377daee",
-          "input": false,
-          "inputPort": false,
+          "id": "c864f19a-926d-4c60-a514-9c1d07a6aae8",
+          "input": true,
+          "inputPort": "7c6f9ef1-d84e-49c7-b49e-2f8eb9e0436f",
           "name": "subj_id",
           "output": true,
-          "outputPort": "9202ba3e-6262-44bd-822d-7d41839d4581",
+          "outputPort": "da2f6459-d6c2-4380-87d7-586c8f8a5256",
           "value": "['sub001', 'sub002']",
           "visible": true,
-          "iterator": false
+          "iterator": true
         },
         {
           "base": "run_num",
           "editable": true,
-          "id": "d29acd09-5232-4263-91e0-d68a90cea5bb",
-          "input": false,
-          "inputPort": false,
+          "id": "29e30f18-8959-44d8-a5fb-3879ce44af58",
+          "input": true,
+          "inputPort": "785c8813-fdc3-4da0-b056-3535b95e9436",
           "name": "run_num",
           "output": true,
-          "outputPort": "8dc170bd-5faf-4a00-9f02-93e09dae43d6",
+          "outputPort": "22a98997-5a24-4a15-9bb6-fc87b6ff4ad7",
           "value": "['run001', 'run003']",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        -2192.890132873302,
-        -305.25570850597
+        -2187.556880920177,
+        -309.25570850597
       ],
       "title": {
         "code": [
