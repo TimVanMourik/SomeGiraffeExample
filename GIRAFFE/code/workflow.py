@@ -52,7 +52,7 @@ BandpassFilter = pe.MapNode(interface = fsl.TemporalFilter(), name='BandpassFilt
 BandpassFilter.inputs.highpass_sigma = 25
 
 #Wraps the executable command ``bet``.
-BrainExtraction = pe.MapNode(interface = fsl.BET(), name='BrainExtraction', iterfield = ['in_file'])
+BrainExtraction = pe.Node(interface = fsl.BET(), name='BrainExtraction')
 
 #Generic datasink module to store structured outputs
 io_DataSink = pe.Node(interface = io.DataSink(), name='io_DataSink')
