@@ -55,6 +55,14 @@
     {
       "from": "add453b9-ecdb-48a3-80cb-d9b7e57bf37f",
       "to": "fb89fc7f-fa3d-4999-80cc-2650df244ec9"
+    },
+    {
+      "from": "da2f6459-d6c2-4380-87d7-586c8f8a5256",
+      "to": "6d01cb5d-c5a4-4b15-a24d-101a9725c184"
+    },
+    {
+      "from": "22a98997-5a24-4a15-9bb6-fc87b6ff4ad7",
+      "to": "c9fba37a-20f1-4d81-b0f2-a4da8d65611c"
     }
   ],
   "nodes": [
@@ -203,7 +211,7 @@
           "name": "subj_id",
           "output": false,
           "outputPort": false,
-          "value": "['sub001', 'sub002']",
+          "value": "",
           "visible": true,
           "iterator": false
         },
@@ -216,7 +224,7 @@
           "name": "run_num",
           "output": false,
           "outputPort": false,
-          "value": "['run001', 'run003']",
+          "value": "",
           "visible": true,
           "iterator": false
         },
@@ -274,8 +282,8 @@
         }
       ],
       "position": [
-        -1867.0045791672926,
-        -486.13321122705406
+        -1979.2409072922926,
+        -359.42612657129234
       ],
       "title": {
         "code": [
@@ -294,7 +302,7 @@
             "language": "Docker"
           }
         ],
-        "name": "io_S3DataGrabber",
+        "name": "DataFromOpenNeuro",
         "class": "io.S3DataGrabber",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
       }
@@ -503,8 +511,8 @@
         }
       ],
       "position": [
-        -1584.6679097935294,
-        -305.8726343986173
+        -1699.0253316685294,
+        -309.3913111564298
       ],
       "title": {
         "code": [
@@ -523,7 +531,7 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl_SliceTimer",
+        "name": "SliceTimer",
         "class": "fsl.SliceTimer",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer"
       }
@@ -953,8 +961,8 @@
         }
       ],
       "position": [
-        -1288.8178441432046,
-        -340.54590601841727
+        -1387.3411595728921,
+        -347.5832900516204
       ],
       "title": {
         "code": [
@@ -973,7 +981,7 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl_MCFLIRT",
+        "name": "MotionCorrection",
         "class": "fsl.MCFLIRT",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#mcflirt"
       }
@@ -1130,8 +1138,8 @@
         }
       ],
       "position": [
-        -1119.4161190888183,
-        -493.21387590471454
+        -1138.7689022919433,
+        -533.6787806898708
       ],
       "title": {
         "code": [
@@ -1150,7 +1158,7 @@
             "language": "Docker"
           }
         ],
-        "name": "confounds_TSNR",
+        "name": "TSNR",
         "class": "confounds.TSNR",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr"
       }
@@ -1294,8 +1302,8 @@
         }
       ],
       "position": [
-        -898.4197521689625,
-        -552.1631021765979
+        -949.4407482627125,
+        -557.4411478308948
       ],
       "title": {
         "code": [
@@ -1314,7 +1322,7 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl_ImageStats",
+        "name": "ComputeLowTsnr",
         "class": "fsl.ImageStats",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats"
       }
@@ -1524,7 +1532,7 @@
       ],
       "position": [
         -694.3933008325441,
-        -478.4822660363589
+        -494.3163724816714
       ],
       "title": {
         "code": [
@@ -1543,7 +1551,7 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl_Threshold",
+        "name": "Threshold",
         "class": "fsl.Threshold",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold"
       }
@@ -1778,8 +1786,8 @@
         }
       ],
       "position": [
-        -494.24434226112146,
-        -345.50222588377187
+        -497.76301901893396,
+        -377.17045403318593
       ],
       "title": {
         "code": [
@@ -1798,7 +1806,7 @@
             "language": "Docker"
           }
         ],
-        "name": "confounds_ACompCor",
+        "name": "NoiseComponents",
         "class": "confounds.ACompCor",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor"
       }
@@ -1994,8 +2002,8 @@
         }
       ],
       "position": [
-        -223.33335307475872,
-        -193.1830954107727
+        -255.00155070659466,
+        -175.58965821594848
       ],
       "title": {
         "code": [
@@ -2014,7 +2022,7 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl_FilterRegressor",
+        "name": "RegressionFilter",
         "class": "fsl.FilterRegressor",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor"
       }
@@ -2197,8 +2205,8 @@
         }
       ],
       "position": [
-        58.620911222160004,
-        -83.07837760010477
+        35.74943600243344,
+        -40.85412442246195
       ],
       "title": {
         "code": [
@@ -2217,7 +2225,7 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl_TemporalFilter",
+        "name": "BandpassFilter",
         "class": "fsl.TemporalFilter",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
       }
@@ -2240,7 +2248,7 @@
           "outputPort": false,
           "value": "",
           "visible": true,
-          "iterator": true
+          "iterator": false
         },
         {
           "base": "out_file",
@@ -2660,8 +2668,8 @@
         }
       ],
       "position": [
-        -1548.9973337403478,
-        -136.48485941751989
+        -1496.2170603028478,
+        -110.09470171793492
       ],
       "title": {
         "code": [
@@ -2680,7 +2688,7 @@
             }
           }
         ],
-        "name": "fsl_BET",
+        "name": "BrainExtraction",
         "class": "fsl.BET",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#bet"
       }
@@ -2911,6 +2919,66 @@
         "name": "io_DataSink",
         "class": "io.DataSink",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#datasink"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "utility",
+        "base"
+      ],
+      "ports": [
+        {
+          "base": "subj_id",
+          "editable": true,
+          "id": "c864f19a-926d-4c60-a514-9c1d07a6aae8",
+          "input": true,
+          "inputPort": "7c6f9ef1-d84e-49c7-b49e-2f8eb9e0436f",
+          "name": "subj_id",
+          "output": true,
+          "outputPort": "da2f6459-d6c2-4380-87d7-586c8f8a5256",
+          "value": "['sub001', 'sub002']",
+          "visible": true,
+          "iterator": true
+        },
+        {
+          "base": "run_num",
+          "editable": true,
+          "id": "29e30f18-8959-44d8-a5fb-3879ce44af58",
+          "input": true,
+          "inputPort": "785c8813-fdc3-4da0-b056-3535b95e9436",
+          "name": "run_num",
+          "output": true,
+          "outputPort": "22a98997-5a24-4a15-9bb6-fc87b6ff4ad7",
+          "value": "['run001', 'run003']",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -2203.692134826427,
+        -363.52893238292313
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Basic interface class generates identity mappings",
+            "argument": {
+              "name": "utility.IdentityInterface()",
+              "import": "import nipype.interfaces.utility as utility"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, utility"
+            }
+          }
+        ],
+        "name": "Parameters",
+        "class": "utility.IdentityInterface",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#identityinterface"
       }
     }
   ],
