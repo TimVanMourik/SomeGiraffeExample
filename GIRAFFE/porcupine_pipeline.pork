@@ -67,6 +67,7 @@
   ],
   "nodes": [
     {
+      "toolbox": "Nipype",
       "category": [
         "io"
       ],
@@ -307,6 +308,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "fsl",
         "preprocess"
@@ -535,6 +537,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "fsl",
         "preprocess"
@@ -984,6 +987,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "algorithms",
         "confounds"
@@ -1160,6 +1164,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "fsl",
         "utils"
@@ -1323,6 +1328,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "fsl",
         "maths"
@@ -1551,6 +1557,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "algorithms",
         "confounds"
@@ -1805,6 +1812,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "fsl",
         "utils"
@@ -2020,6 +2028,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "fsl",
         "maths"
@@ -2222,6 +2231,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "fsl",
         "preprocess"
@@ -2684,6 +2694,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "io"
       ],
@@ -2911,6 +2922,7 @@
       }
     },
     {
+      "toolbox": "Nipype",
       "category": [
         "utility",
         "base"
