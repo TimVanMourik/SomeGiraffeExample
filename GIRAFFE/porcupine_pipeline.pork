@@ -68,6 +68,8 @@
   "nodes": [
     {
       "toolbox": "Nipype",
+      "name": "DataFromOpenNeuro",
+      "class": "io.S3DataGrabber",
       "category": [
         "io"
       ],
@@ -285,30 +287,28 @@
         -1979.2409072922926,
         -359.42612657129234
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.io as io",
-              "name": "io.S3DataGrabber()"
-            },
-            "comment": "Generic datagrabber module that wraps around glob in an",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.io as io",
+            "name": "io.S3DataGrabber()"
           },
-          {
-            "argument": {
-              "name": "Nipype, io"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "DataFromOpenNeuro",
-        "class": "io.S3DataGrabber",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
-      }
+          "comment": "Generic datagrabber module that wraps around glob in an",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, io"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
     },
     {
       "toolbox": "Nipype",
+      "name": "SliceTimer",
+      "class": "fsl.SliceTimer",
       "category": [
         "fsl",
         "preprocess"
@@ -514,30 +514,28 @@
         -1699.0253316685294,
         -309.3913111564298
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.SliceTimer()"
-            },
-            "comment": "Wraps command **slicetimer**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.SliceTimer()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "SliceTimer",
-        "class": "fsl.SliceTimer",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer"
-      }
+          "comment": "Wraps command **slicetimer**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer"
     },
     {
       "toolbox": "Nipype",
+      "name": "MotionCorrection",
+      "class": "fsl.MCFLIRT",
       "category": [
         "fsl",
         "preprocess"
@@ -964,30 +962,28 @@
         -1387.3411595728921,
         -347.5832900516204
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.MCFLIRT()"
-            },
-            "comment": "Wraps command **mcflirt**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.MCFLIRT()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "MotionCorrection",
-        "class": "fsl.MCFLIRT",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#mcflirt"
-      }
+          "comment": "Wraps command **mcflirt**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#mcflirt"
     },
     {
       "toolbox": "Nipype",
+      "name": "TSNR",
+      "class": "confounds.TSNR",
       "category": [
         "algorithms",
         "confounds"
@@ -1141,30 +1137,28 @@
         -1138.7689022919433,
         -533.6787806898708
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.algorithms.confounds as confounds",
-              "name": "confounds.TSNR()"
-            },
-            "comment": "Computes the time-course SNR for a time series",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.algorithms.confounds as confounds",
+            "name": "confounds.TSNR()"
           },
-          {
-            "argument": {
-              "name": "Nipype, algorithms, confounds"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "TSNR",
-        "class": "confounds.TSNR",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr"
-      }
+          "comment": "Computes the time-course SNR for a time series",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, algorithms, confounds"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr"
     },
     {
       "toolbox": "Nipype",
+      "name": "ComputeLowTsnr",
+      "class": "fsl.ImageStats",
       "category": [
         "fsl",
         "utils"
@@ -1305,30 +1299,28 @@
         -949.4407482627125,
         -557.4411478308948
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.ImageStats()"
-            },
-            "comment": "Wraps command **fslstats**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.ImageStats()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "ComputeLowTsnr",
-        "class": "fsl.ImageStats",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats"
-      }
+          "comment": "Wraps command **fslstats**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats"
     },
     {
       "toolbox": "Nipype",
+      "name": "Threshold",
+      "class": "fsl.Threshold",
       "category": [
         "fsl",
         "maths"
@@ -1534,30 +1526,28 @@
         -694.3933008325441,
         -494.3163724816714
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.Threshold()"
-            },
-            "comment": "Wraps command **fslmaths**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.Threshold()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "Threshold",
-        "class": "fsl.Threshold",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold"
-      }
+          "comment": "Wraps command **fslmaths**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold"
     },
     {
       "toolbox": "Nipype",
+      "name": "NoiseComponents",
+      "class": "confounds.ACompCor",
       "category": [
         "algorithms",
         "confounds"
@@ -1789,30 +1779,28 @@
         -497.76301901893396,
         -377.17045403318593
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.algorithms.confounds as confounds",
-              "name": "confounds.ACompCor()"
-            },
-            "comment": "Anatomical compcor: for inputs and outputs, see CompCor.",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.algorithms.confounds as confounds",
+            "name": "confounds.ACompCor()"
           },
-          {
-            "argument": {
-              "name": "Nipype, algorithms, confounds"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "NoiseComponents",
-        "class": "confounds.ACompCor",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor"
-      }
+          "comment": "Anatomical compcor: for inputs and outputs, see CompCor.",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, algorithms, confounds"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor"
     },
     {
       "toolbox": "Nipype",
+      "name": "RegressionFilter",
+      "class": "fsl.FilterRegressor",
       "category": [
         "fsl",
         "utils"
@@ -2005,30 +1993,28 @@
         -255.00155070659466,
         -175.58965821594848
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.FilterRegressor()"
-            },
-            "comment": "Wraps command **fsl_regfilt**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.FilterRegressor()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "RegressionFilter",
-        "class": "fsl.FilterRegressor",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor"
-      }
+          "comment": "Wraps command **fsl_regfilt**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor"
     },
     {
       "toolbox": "Nipype",
+      "name": "BandpassFilter",
+      "class": "fsl.TemporalFilter",
       "category": [
         "fsl",
         "maths"
@@ -2208,30 +2194,28 @@
         35.74943600243344,
         -40.85412442246195
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.TemporalFilter()"
-            },
-            "comment": "Wraps command **fslmaths**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.TemporalFilter()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "BandpassFilter",
-        "class": "fsl.TemporalFilter",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
-      }
+          "comment": "Wraps command **fslmaths**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
     },
     {
       "toolbox": "Nipype",
+      "name": "BrainExtraction",
+      "class": "fsl.BET",
       "category": [
         "fsl",
         "preprocess"
@@ -2671,30 +2655,28 @@
         -1634.9232370606603,
         -89.43633074625524
       ],
-      "title": {
-        "code": [
-          {
-            "language": "Nipype",
-            "comment": "Wraps the executable command ``bet``.",
-            "argument": {
-              "name": "fsl.BET()",
-              "import": "import nipype.interfaces.fsl as fsl"
-            }
-          },
-          {
-            "language": "Docker",
-            "argument": {
-              "name": "Nipype, fsl"
-            }
+      "code": [
+        {
+          "language": "Nipype",
+          "comment": "Wraps the executable command ``bet``.",
+          "argument": {
+            "name": "fsl.BET()",
+            "import": "import nipype.interfaces.fsl as fsl"
           }
-        ],
-        "name": "BrainExtraction",
-        "class": "fsl.BET",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#bet"
-      }
+        },
+        {
+          "language": "Docker",
+          "argument": {
+            "name": "Nipype, fsl"
+          }
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#bet"
     },
     {
       "toolbox": "Nipype",
+      "name": "io_DataSink",
+      "class": "io.DataSink",
       "category": [
         "io"
       ],
@@ -2899,30 +2881,28 @@
         365.12981158423486,
         61.145361519753294
       ],
-      "title": {
-        "code": [
-          {
-            "language": "Nipype",
-            "comment": "Generic datasink module to store structured outputs",
-            "argument": {
-              "name": "io.DataSink()",
-              "import": "import nipype.interfaces.io as io"
-            }
-          },
-          {
-            "language": "Docker",
-            "argument": {
-              "name": "Nipype, io"
-            }
+      "code": [
+        {
+          "language": "Nipype",
+          "comment": "Generic datasink module to store structured outputs",
+          "argument": {
+            "name": "io.DataSink()",
+            "import": "import nipype.interfaces.io as io"
           }
-        ],
-        "name": "io_DataSink",
-        "class": "io.DataSink",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#datasink"
-      }
+        },
+        {
+          "language": "Docker",
+          "argument": {
+            "name": "Nipype, io"
+          }
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#datasink"
     },
     {
       "toolbox": "Nipype",
+      "name": "Parameters",
+      "class": "utility.IdentityInterface",
       "category": [
         "utility",
         "base"
@@ -2959,27 +2939,23 @@
         -2203.692134826427,
         -363.52893238292313
       ],
-      "title": {
-        "code": [
-          {
-            "language": "Nipype",
-            "comment": "Basic interface class generates identity mappings",
-            "argument": {
-              "name": "utility.IdentityInterface()",
-              "import": "import nipype.interfaces.utility as utility"
-            }
-          },
-          {
-            "language": "Docker",
-            "argument": {
-              "name": "Nipype, utility"
-            }
+      "code": [
+        {
+          "language": "Nipype",
+          "comment": "Basic interface class generates identity mappings",
+          "argument": {
+            "name": "utility.IdentityInterface()",
+            "import": "import nipype.interfaces.utility as utility"
           }
-        ],
-        "name": "Parameters",
-        "class": "utility.IdentityInterface",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#identityinterface"
-      }
+        },
+        {
+          "language": "Docker",
+          "argument": {
+            "name": "Nipype, utility"
+          }
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#identityinterface"
     }
   ],
   "version": "v1"
