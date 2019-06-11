@@ -78,6 +78,94 @@ RUN echo "Downloading FSL ..." \
 ENV FSLDIR=/opt/fsl \
     PATH=/opt/fsl/bin:$PATH
 
+#-----------------------------------------------------------
+# Install FSL v5.0.10
+# FSL is non-free. If you are considering commerical use
+# of this Docker image, please consult the relevant license:
+# https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence
+#-----------------------------------------------------------
+RUN echo "Downloading FSL ..." \
+    && curl -sSL https://fsl.fmrib.ox.ac.uk/fsldownloads/fsl-5.0.10-centos6_64.tar.gz \
+    | tar zx -C /opt \
+    && /bin/bash /opt/fsl/etc/fslconf/fslpython_install.sh -q -f /opt/fsl \
+    && sed -i '$iecho Some packages in this Docker container are non-free' $ND_ENTRYPOINT \
+    && sed -i '$iecho If you are considering commercial use of this container, please consult the relevant license:' $ND_ENTRYPOINT \
+    && sed -i '$iecho https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence' $ND_ENTRYPOINT \
+    && sed -i '$isource $FSLDIR/etc/fslconf/fsl.sh' $ND_ENTRYPOINT
+ENV FSLDIR=/opt/fsl \
+    PATH=/opt/fsl/bin:$PATH
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  
+    
+
+<title>GiraffeTools</title>
+
+<meta charset="UTF-8" />
+<meta name="theme-color" content="#FFFFFF" />
+<meta name="msapplication-TileColor" content="#DA532c"/>
+<script src="/cdn-cgi/apps/head/te-KrPT4N4uVrv29ZCeF7jf2xFk.js"></script><link rel="icon" href="/static/favicon/favicon.0e03b5a09b90.ico" type="image/x-icon"/>
+
+<!-- Still an issue with these links -->
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+<!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+
+<!-- Font Awesome css only: -->
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+  crossorigin="anonymous"
+/>
+
+<!-- Bootstrap css only: -->
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+
+  
+  <link type="text/css" href="/static/webpack_bundles/porcupine.6dcbc9323430.css" rel="stylesheet" />
+
+</head>
+
+<body class=index>
+  
+  <div id="porcupine" />
+
+</body>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116460525-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116460525-2');
+</script>
+
+
+
+
+  
+
+  <script type="text/javascript" src="/static/webpack_bundles/porcupine-70567787a57386fba406.47ec203e80d2.js" ></script>
+
+
+</html>
+
 #--------------------------------
 # Add custom analysis file as CMD
 #--------------------------------

@@ -63,6 +63,10 @@ Parameters = pe.Node(utility.IdentityInterface(fields=["subj_id", "run_num"]), n
 Parameters.inputs.run_num = ['run001', 'run003']
 Parameters.iterables = [('subj_id', ['sub001', 'sub002'])]
 
+#Wraps the executable command ``flirt``.
+fsl_FLIRT = pe.Node(interface = fsl.FLIRT(), name='fsl_FLIRT')
+fsl_FLIRT.inputs.dof = 6
+
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
 analysisflow.connect(SliceTimer, "slice_time_corrected_file", MotionCorrection, "in_file")
@@ -81,6 +85,9 @@ analysisflow.connect(BandpassFilter, "out_file", io_DataSink, "filtered")
 analysisflow.connect(BrainExtraction, "out_file", io_DataSink, "skullstripped")
 analysisflow.connect(Parameters, "subj_id", DataFromOpenNeuro, "subj_id")
 analysisflow.connect(Parameters, "run_num", DataFromOpenNeuro, "run_num")
+analysisflow.connect(BrainExtraction, "out_file", fsl_FLIRT, "in_file")
+analysisflow.connect(MotionCorrection, "out_file", fsl_FLIRT, "reference")
+analysisflow.connect(fsl_FLIRT, "out_file", io_DataSink, "registered")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here
