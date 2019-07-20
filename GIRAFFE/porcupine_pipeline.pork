@@ -1,90 +1,106 @@
 {
   "links": [
     {
+      "id": "4960c62a-9dcf-4db2-a3b7-1b63e6ec8761",
       "from": "76ba750",
       "to": "5cc0800"
     },
     {
+      "id": "00b501e5-d67c-40ee-9c8b-5d82424aef6d",
       "from": "3254900",
       "to": "24ac070"
     },
     {
+      "id": "0a203ade-f62b-43da-9911-e9a8a79affa7",
       "from": "4111420",
       "to": "2307650"
     },
     {
+      "id": "8ee33e9e-dba3-4024-aace-59c8c105922d",
       "from": "30d8ec0",
       "to": "2adb890"
     },
     {
+      "id": "3579b317-acf2-4061-b859-61abf9f02231",
       "from": "3254900",
       "to": "7395ca0"
     },
     {
+      "id": "390e7cf2-0266-48ef-87a7-b2a689df374d",
       "from": "1dd4c50",
       "to": "50b9ee0"
     },
     {
+      "id": "6f96feae-627d-4d75-a641-778a7db2815e",
       "from": "2909250",
       "to": "462be00"
     },
     {
+      "id": "7322940a-d97e-4041-bc77-93eb5efe3f46",
       "from": "171f310",
       "to": "33cc250"
     },
     {
+      "id": "5288c64a-2149-48a8-9170-6a8a63c71e19",
       "from": "3fb3a00",
       "to": "596e0a0"
     },
     {
+      "id": "062976d1-0292-4bbc-83b8-681a1e800e81",
       "from": "4111420",
       "to": "41cce40"
     },
     {
+      "id": "6275f168-9a2d-4829-a82f-65778dd030c9",
       "from": "8f464522-5291-43c3-b261-1c2dd606e55d",
       "to": "5876410"
     },
     {
+      "id": "de66e720-03a2-45e8-a2bb-1a07173fe063",
       "from": "0a16a744-3d10-4feb-9da7-fb08e885a16a",
       "to": "4714c6b9-36a2-4cf1-90b3-4673fe38324a"
     },
     {
+      "id": "ee1321a7-7728-40e0-9c4f-66e986605182",
       "from": "89647d0",
       "to": "3521e8ce-237c-49c7-886c-81b94dfa3712"
     },
     {
+      "id": "f5e662bb-9653-4b5e-9fac-d2afddf2bb77",
       "from": "add453b9-ecdb-48a3-80cb-d9b7e57bf37f",
       "to": "fb89fc7f-fa3d-4999-80cc-2650df244ec9"
     },
     {
+      "id": "992665c7-f92d-4a0c-b789-ac864325b161",
       "from": "da2f6459-d6c2-4380-87d7-586c8f8a5256",
       "to": "6d01cb5d-c5a4-4b15-a24d-101a9725c184"
     },
     {
+      "id": "20cc42e7-58fb-44d3-b18c-485c2fc26021",
       "from": "22a98997-5a24-4a15-9bb6-fc87b6ff4ad7",
       "to": "c9fba37a-20f1-4d81-b0f2-a4da8d65611c"
     },
     {
+      "id": "1438d82c-27fd-4dab-9ccf-505213399272",
       "from": "add453b9-ecdb-48a3-80cb-d9b7e57bf37f",
       "to": "14fe1a97-c436-455b-b9d4-b36ce5b89b56"
     },
     {
+      "id": "5ba5897d-1aec-44c5-a530-a3c895fae407",
       "from": "3254900",
       "to": "f5ac781d-e648-4e74-8121-29c9876d720f"
     },
     {
+      "id": "27b94e56-e9ee-49b9-9aa8-c485777fceb0",
       "from": "a7318079-76e8-4134-89ca-f9f27130810d",
       "to": "d2dc75d7-ad1c-4b4c-b178-9a99ff79ffde"
     }
   ],
   "nodes": [
     {
-      "toolbox": "Nipype",
+      "id": "f8c913b7-6208-406b-a294-8b749b4437d9",
       "name": "DataFromOpenNeuro",
       "class": "io.S3DataGrabber",
-      "category": [
-        "io"
-      ],
       "ports": [
         {
           "base": "bucket",
@@ -296,7 +312,7 @@
         }
       ],
       "position": [
-        -1979.2409072922926,
+        -1980.252748112605,
         -359.42612657129234
       ],
       "code": [
@@ -319,13 +335,9 @@
       "colour": "#fe334e"
     },
     {
-      "toolbox": "Nipype",
+      "id": "db55846a-8d27-471c-9eec-1011b18c69e5",
       "name": "SliceTimer",
       "class": "fsl.SliceTimer",
-      "category": [
-        "fsl",
-        "preprocess"
-      ],
       "ports": [
         {
           "base": "in_file",
@@ -547,13 +559,9 @@
       "colour": "#fe3948"
     },
     {
-      "toolbox": "Nipype",
+      "id": "18669484-c956-49f0-b04a-30bd04a1d391",
       "name": "MotionCorrection",
       "class": "fsl.MCFLIRT",
-      "category": [
-        "fsl",
-        "preprocess"
-      ],
       "ports": [
         {
           "base": "in_file",
@@ -996,13 +1004,9 @@
       "colour": "#fe3948"
     },
     {
-      "toolbox": "Nipype",
+      "id": "40a2a565-d3d7-408e-b110-de95ec81098c",
       "name": "TSNR",
       "class": "confounds.TSNR",
-      "category": [
-        "algorithms",
-        "confounds"
-      ],
       "ports": [
         {
           "base": "in_file",
@@ -1172,13 +1176,9 @@
       "colour": "#9edb06"
     },
     {
-      "toolbox": "Nipype",
+      "id": "46626f13-33d1-4def-906b-98215bd95c4c",
       "name": "ComputeLowTsnr",
       "class": "fsl.ImageStats",
-      "category": [
-        "fsl",
-        "utils"
-      ],
       "ports": [
         {
           "base": "in_file",
@@ -1335,13 +1335,9 @@
       "colour": "#fe364b"
     },
     {
-      "toolbox": "Nipype",
+      "id": "bc5b04e8-c4e3-42f3-9056-676dd7e99e11",
       "name": "Threshold",
       "class": "fsl.Threshold",
-      "category": [
-        "fsl",
-        "maths"
-      ],
       "ports": [
         {
           "base": "thresh",
@@ -1563,13 +1559,9 @@
       "colour": "#fe413f"
     },
     {
-      "toolbox": "Nipype",
+      "id": "04af9d4a-60b5-4423-a359-acd994bcd85f",
       "name": "NoiseComponents",
       "class": "confounds.ACompCor",
-      "category": [
-        "algorithms",
-        "confounds"
-      ],
       "ports": [
         {
           "base": "realigned_file",
@@ -1817,13 +1809,9 @@
       "colour": "#9edb06"
     },
     {
-      "toolbox": "Nipype",
+      "id": "62da505c-d711-42bf-ba3d-c94e93620c45",
       "name": "RegressionFilter",
       "class": "fsl.FilterRegressor",
-      "category": [
-        "fsl",
-        "utils"
-      ],
       "ports": [
         {
           "base": "in_file",
@@ -2032,13 +2020,9 @@
       "colour": "#fe364b"
     },
     {
-      "toolbox": "Nipype",
+      "id": "97174aeb-8d56-4e6f-a980-3373e7d0d6a2",
       "name": "BandpassFilter",
       "class": "fsl.TemporalFilter",
-      "category": [
-        "fsl",
-        "maths"
-      ],
       "ports": [
         {
           "base": "in_file",
@@ -2234,13 +2218,9 @@
       "colour": "#fe413f"
     },
     {
-      "toolbox": "Nipype",
+      "id": "5ca6bb2b-a182-48fc-807f-892ccd544ef4",
       "name": "BrainExtraction",
       "class": "fsl.BET",
-      "category": [
-        "fsl",
-        "preprocess"
-      ],
       "ports": [
         {
           "base": "in_file",
@@ -2696,12 +2676,9 @@
       "colour": "#fe3948"
     },
     {
-      "toolbox": "Nipype",
+      "id": "6a394a14-1bcc-4bc3-a140-1f04404aac83",
       "name": "io_DataSink",
       "class": "io.DataSink",
-      "category": [
-        "io"
-      ],
       "ports": [
         {
           "base": "base_directory",
@@ -2936,13 +2913,9 @@
       "colour": "#fe334e"
     },
     {
-      "toolbox": "Nipype",
+      "id": "cbdb5ad6-fd30-400f-a723-1834993c4580",
       "name": "Parameters",
       "class": "utility.IdentityInterface",
-      "category": [
-        "utility",
-        "base"
-      ],
       "ports": [
         {
           "base": "subj_id",
@@ -2995,12 +2968,9 @@
       "colour": "#9e06db"
     },
     {
+      "id": "665a34bd-3ada-47cb-9fda-9baa84cbac19",
       "name": "fsl_FLIRT",
       "class": "fsl.FLIRT",
-      "category": [
-        "fsl",
-        "preprocess"
-      ],
       "ports": [
         {
           "base": "in_file",
@@ -3714,6 +3684,13 @@
       ],
       "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#flirt",
       "colour": "#fe3948"
+    }
+  ],
+  "stickies": [
+    {
+      "id": "1eaff100-5e09-4095-99b3-a12d4742c087",
+      "title": "Load data",
+      "content": "load data from OpenNeuro.org: a set of functional runs of a Simon task and a structural scan"
     }
   ],
   "version": "v1"
