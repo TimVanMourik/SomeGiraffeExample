@@ -3690,7 +3690,11 @@
     {
       "id": "1eaff100-5e09-4095-99b3-a12d4742c087",
       "title": "Load data",
-      "content": "load data from OpenNeuro.org: a set of functional runs of a Simon task and a structural scan"
+      "content": "load data from OpenNeuro.org: a set of functional runs of a Simon task and a structural scan",
+      "position": [
+        -1880.069076538086,
+        -639.6986083984375
+      ]
     }
   ],
   "version": "v1"
