@@ -3699,10 +3699,10 @@
     {
       "id": "41167892-4a47-40c9-a192-5a6b6ad29a99",
       "title": "parameters",
-      "content": "my memo",
+      "content": "Iterate over subject, not over run. See parameter attributes in the node.",
       "position": [
         -2379.168243408203,
-        -405.5400085449219
+        -404.23785400390625
       ]
     }
   ],
