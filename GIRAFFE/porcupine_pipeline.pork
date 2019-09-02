@@ -3704,7 +3704,21 @@
         -2376.700637817383,
         -387.44527435302734
       ]
+    },
+    {
+      "id": "8f84d5b0-b17f-473d-aefb-6da0da338909",
+      "title": "Hi!",
+      "content": "Keep an open mind!",
+      "position": [
+        -36.23541259765625,
+        -408.47193908691406
+      ]
     }
   ],
+  "ui": {
+    "showToolboxes": [
+      "Nipype"
+    ]
+  },
   "version": "v1"
 }
